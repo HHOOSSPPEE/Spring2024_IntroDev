@@ -4,9 +4,7 @@ Link to game: (itch link)
 
 
 ## **Debrief**
-In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
-
-Though there are still features like Kirby swallowing enemies or enemies respawning when they are out of the players’view that haven't been done yet, I'm pretty satisfied with what I’ve done for this project.
+Though there are still features like Kirby swallowing enemies or enemies respawning when they are out of the players’view that haven't been done yet, I'm pretty satisfied with what I’ve done for this project. [UPDATE]: Respawning mechanic added, 2024/2/12.
 
 I spend a lot of time adjusting the feel of jumping and floating. At first, I found that setting the ground check variable to an integer conflicted with the mechanics of high and low jumps. However, after redesigning my code, I managed to combine both mechanics. Now, in terms of the feel of movement, I think my clone isn’t much different from the original.
 

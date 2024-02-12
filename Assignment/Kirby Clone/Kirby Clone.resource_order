@@ -27,7 +27,7 @@
     {"name":"spr_kirby_fall","order":6,"path":"sprites/spr_kirby_fall/spr_kirby_fall.yy",},
     {"name":"spr_kirby_fly_transform","order":9,"path":"sprites/spr_kirby_fly_transform/spr_kirby_fly_transform.yy",},
     {"name":"spr_fly","order":18,"path":"sprites/spr_fly/spr_fly.yy",},
-    {"name":"obj_game_manager","order":6,"path":"objects/obj_game_manager/obj_game_manager.yy",},
+    {"name":"obj_enemy_manager","order":6,"path":"objects/obj_enemy_manager/obj_enemy_manager.yy",},
     {"name":"obj_pit","order":7,"path":"objects/obj_pit/obj_pit.yy",},
     {"name":"obj_bird","order":8,"path":"objects/obj_bird/obj_bird.yy",},
     {"name":"pth_monkey4","order":9,"path":"paths/pth_monkey4/pth_monkey4.yy",},

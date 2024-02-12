@@ -14,10 +14,3 @@ if (abs(obj_kirby.x-x)>obj_camera.camWidth*2){// destroy enemy when out of sight
 	listHasEmpty=false;
 	instance_destroy();
 }
-if (x-xLast<=0){
-	image_xscale=1;
-}
-else{
-	image_xscale=-1;
-}
-xLast = x;
