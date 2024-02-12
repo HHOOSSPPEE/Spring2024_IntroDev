@@ -1,7 +1,5 @@
 ### **2024 Spring** - Nicholas Wong
 ### *Assignment 0* - Clone Retro Game
-Link to game: (itch link)
-
 
 ## **Debrief**
 I am pretty happy with the project, I am not really a programming type of guy so it was rewarding just working hard on this project and not needing to follow tutorials. I think what I want to get out of this class is an understanding of the art and creative side of game dev. Maybe to implement creative uses of 2D art and storytelling. I do want to push myself with programming as well. I thought that the class tutorials were really helpful but in some parts, I am still a little bit confused with how the jumping works. 
