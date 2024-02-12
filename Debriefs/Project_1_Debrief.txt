@@ -1,0 +1,7 @@
+### **2024 Spring** - Yunhang Q
+### *Project 1
+
+
+Create an original game that, through simple gameplay and environmental design, tells a story.
+## **Debrief**
+Theme: Jealousy. This is an arcade survival game that player will try to survive for as long as possible while collecting gold/jewelries. The more gold/jewelries you have the stronger and more aggressive the enemies.
