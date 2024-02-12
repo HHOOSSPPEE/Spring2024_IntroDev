@@ -1,0 +1,1 @@
+puff_speed = -2;
