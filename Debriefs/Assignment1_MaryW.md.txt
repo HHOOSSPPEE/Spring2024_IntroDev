@@ -1,0 +1,7 @@
+### **2024 Spring** - Mary W
+### *Assignment 1* - Clone Game
+
+
+## **Debrief**
+For this project, I cloned Kirby’s Dreamland. The requirements we agreed on were enemy movement, enemy respawning, and Kirby’s two jumps. I think my project turned out alright, and I’m mostly happy with it. I had some trouble with getting animations to work the way I wanted as well as the enemy movement. One enemy moves up and down opposed to the others which move left to right, and it wasn’t working correctly because of some misplaced variables. Currently it’s working basically as it should, but is a bit different than the original game. Other than those two issues, I’m happy with the rest of my project. The two types of jumping felt correct, and I added the air attack as well. There were a few minor bits of polish I would have liked to add, such as preventing the black background from showing and adding heath UI. For me, the most helpful resource was YouTube and google when programming parts such as taking damage from enemy collision. Live code in class was also very helpful as I could ask any questions I had, as well as feedback from classmates to see what methods other people were using to program the same elements. Next time, I’d like to spend more time learning how animation works in game maker and implement it into my project, as well as some editing to the game’s feel. I’d also like to manage my time better, and spend much less time trying to fix small unimportant issues.
+
