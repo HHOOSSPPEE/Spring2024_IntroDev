@@ -1,0 +1,24 @@
+### **2023 Spring** - Yunhang Q
+### *Assignment 0* - Clone Project #1 - Mario
+
+
+## **Debrief**
+	The project turned out fine and I am mildly happy with the result. The game is not exactly as close to the original mario as I would have liked and also there are missing functions such as the fireball. This is mostly due to the fact that my initial research was not good enough and I kept discovering new functions or features of the game later in the development process, which complicated things such as variables, controllers etc. Essentially, I kept adding features that were not originally incorporated into the design of the code. I underestimated how complicated the game is and how difficult some of the features were to implement, which extended the time frame. I spent too much time polishing the movements, for example, having slow acceleration instead of getting in terminal velocity right away, but also resetting the speed when you turn. I also created little moving animations for the mystery tiles and bricks before having teleportation done. I also spent some time doing unnecessary things such as creating animation with code instead of art because I would have less sprites, but ended up taking much more time than it should. However, I am still quite happy with the results and with the quality of some features.
+	If I were to do this project again, I would definitely play and research the game more thoroughly to have a comprehensive understanding of the game itself, then commence coding. I will also focus on completing all features of the game, especially the major ones, before moving on to polish the details on game feels.
+
+
+**Execution** (Did your project meet the theme you gave it?) - 4
+
+*Write your elaboration within the asterixis*
+
+
+**Scope** (How well do you feel you scoped your game?) - 4
+
+
+*Write your elaboration within the asterixis*
+
+
+**Overall** - Pass
+
+
+*Write your elaboration within the asterixis*
