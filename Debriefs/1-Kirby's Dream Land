@@ -1,6 +1,5 @@
-### **2024 Spring** Jiahe G
-### *Assignment 1* Kirby’s Dream Land Clone
-Link to game: (itch link)
+### **2024 Spring** - Jiahe G
+### *Assignment 1* - Kirby’s Dream Land Clone
 
 ## **Debrief**
 The project was overall satisfying and I learned a lot about coding and Gamemaker. I’ve been familiar with tile maps and animations, so the initial settings were pretty straight forward. However, it was my first time using gravity in gamemaker and writing code dealing with “isGrounded,” and I find it somewhat challenging. The most challenging part was the “float” function of Kirby, I tried out different codes but it still doesn’t work properly. Setting the ground check variable kind of conflicted with the mechanics of double jump(the second jump as floating) and I was stuck on that. Instead of actually “floating,” I had to make it that you could jump higher when you hold the space key. In this regard I believe I could make more improvements next time to make it smoother. Also, I could’ve added collisions and Kirby’s attacks.
