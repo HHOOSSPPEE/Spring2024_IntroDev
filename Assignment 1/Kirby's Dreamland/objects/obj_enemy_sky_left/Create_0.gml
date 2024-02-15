@@ -1,0 +1,1 @@
+enemy_speed = 0.4;
