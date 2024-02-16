@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_spawner",
-    "path": "sprites/spr_enemy_spawner/spr_enemy_spawner.yy",
+    "name": "spr_enemy_trigger",
+    "path": "sprites/spr_enemy_trigger/spr_enemy_trigger.yy",
   },
   "spriteMaskId": null,
   "visible": false,

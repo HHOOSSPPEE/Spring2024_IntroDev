@@ -187,18 +187,18 @@ switch(gamestate){
 		y += vertical_velocity;
 		
 		if (keyboard_check_pressed(ord("X"))){
+			instance_create_layer(x, y, "Instances", obj_air);
 			gamestate = GameState.Drop;
 			is_drop = true;
 		}
 	break;
 	case GameState.Drop:
-		if (is_drop){
+		if (is_drop){//is drop is uneeded now
 			sprite_index = spr_kirby_deflate;
 			image_xscale = _dir;
 		}
 		if (image_index >= image_number - 1){
-			sprite_index = spr_kirby_idle;
-			image_xscale = _dir;
+			gamestate = GameState.Jump;
 			is_drop = false;
 		}
 		
@@ -219,7 +219,6 @@ switch(gamestate){
 			}
 	
 			vertical_velocity = 0;
-			gamestate = GameState.Idle;
 		}
 		y += vertical_velocity;
 		
@@ -281,77 +280,3 @@ if (abs(horizontal_velocity) >= max_velocity){
 }
 
 x += horizontal_velocity;//now we move
-/*
-		var key_fly = keyboard_check(vk_up) || keyboard_check(ord("Z"));
-		
-		var _drop_f = 0.5;
-		
-		//always apply
-		vertical_velocity = _drop_f;
-		//if key pressed
-		if (key_fly){
-			vertical_velocity = fly_force;
-		}
-		//if it hits the wall
-		if (y - fly_force < 0){
-			vertical_velocity = _drop_f;
-		}
-		
-		
-		// states only for animation playing
-		if (pre_fly){
-			sprite_index = spr_kirby_inflate;
-			image_xscale = _dir;
-			if (image_index == image_number){
-				pre_fly = false;
-				sprite_index = spr_kirby_fly_idle;
-				image_xscale = _dir;
-			}
-		}
-		//if already in float
-		if (!pre_fly){
-			//if pressed up
-			if (key_fly){
-				sprite_index = spr_kirby_fly_up;
-				image_xscale = _dir;
-			}
-			
-			
-			//if press x
-			if (keyboard_check_pressed(ord("X"))){
-				show_debug_message(1);
-				sprite_index = spr_kirby_deflate;
-				image_xscale = _dir;
-				gamestate = GameState.Idle;
-				//if end animation
-				if (image_index == image_number){
-					sprite_index = spr_kirby_idle;
-					image_xscale = _dir;
-					gamestate = GameState.Idle;
-				}
-			}
-			
-			
-			sprite_index = spr_kirby_fly_idle;
-			image_xscale = _dir;
-
-		}
-		
-		//land on the ground properly
-		if (place_meeting(x, y + vertical_velocity, obj_collision) && !key_fly) //if colliding with floor tile layer on Y
-		{ 
-	
-			while(abs(vertical_velocity) > 0.1) 
-			{
-				vertical_velocity *= 0.5; 
-				if(!place_meeting(x,y + vertical_velocity, obj_collision)) //use obj_collider too
-				{ 
-					y += vertical_velocity;
-				}
-			}
-	
-			vertical_velocity = 0;
-		}
-	
-		y += vertical_velocity;
-*/

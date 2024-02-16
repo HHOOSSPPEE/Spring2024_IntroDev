@@ -29,12 +29,9 @@ is_grounded = 0;
 
 prefly = false;
 is_drop = false;
-fly_timer = 0;
 fly_force = -1.1;
 
 _dir = 1;
 
-move1 = false;
-move2 = false;
 
-hp = 100;
+hp = 5;
