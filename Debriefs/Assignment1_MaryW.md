@@ -1,6 +1,8 @@
-\### \*\*2024 Spring\*\* - Mary W \### \*Assignment 1\* - Clone Game
+\### \*\*2024 Spring\*\* - Mary W 
+\### \*Assignment 1\* - Clone Game
 
-\## \*\*Debrief\*\* For this project, I cloned Kirby's Dreamland. The
+\## \*\*Debrief\*\* 
+For this project, I cloned Kirby's Dreamland. The
 requirements we agreed on were enemy movement, enemy respawning, and
 Kirby's two jumps. I think my project turned out alright, and I'm mostly
 happy with it. I had some trouble with getting animations to work the
