@@ -1,0 +1,30 @@
+﻿\### \*\*2023 Spring\*\* - Sean K
+
+\### \*Assignment 1\* - Narrative Game - Collect
+
+Link to game: https://seankimgames.itch.io/collect
+
+
+\## \*\*Debrief\*\*
+
+In this project I made a Narrative game where a player is going around a village and trying to find a key that opens up a locked door. While looking through the village, players interact with people around them and are offered objects. Players can collect sticks, stones, and water which can help to create a bridge. Talking to each person around the village, you can talk to the people with on screen dialogue. It was difficult to think of a plot for the basis of my game, so I relied heavily on my categorical word. By using my category word “collect” players are incentivized to collect these items that are needed to progress the game. I liked that my game incorporates aspects of  a mystery game with exploring a world aspect, allowing players to be a free spirit.
+
+Additionally, something that I would have liked to incorporate into my game would be complicated puzzles that players have to solve in order to progress the game. Also wish that the dialogue aspect of my game was more interactive with players, allowing for more user autonomy instead of an exploring game. I also believe that my graphics were quite minimalistic, and I could have made it more visually appealing by adding graphics and animations to improve the overall feel of the game. I like conceptually the game that  I created and I think that it was executed very well, but I feel that in terms of animations, it could be polished and more content could be added to the game.
+
+\## \*\*Self Evaluation\*\*
+
+\*\*Execution\*\* (Did your project meet the theme you gave it?) - 4
+
+* Write your elaboration within the asterixis\*
+
+
+\*\*Scope\*\* (How well do you feel you scoped your game?) - 4
+
+
+* Write your elaboration within the asterixis\*
+
+
+\*\*Overall\*\* - Pass
+
+
+* Write your elaboration within the asterixis\*

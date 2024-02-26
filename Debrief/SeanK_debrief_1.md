@@ -1,0 +1,26 @@
+﻿\### \*\*2023 Spring\*\* - Sean K
+
+\### \*Assignment 0\* - Clone Project #1 - Mario
+
+
+\## \*\*Debrief\*\*
+
+For this project I recreated the original Mario game. Using Gamemaker, I made a platformer game by using the original sprites from things including all the things such as the pipes, the mystery boxes, and the mushroom. It was interesting to put together the graphics for the game because it made me realize that a lot of the tiles for the background are repeated. To place the correct items in the correct part of the project, online forums and watching videos on Youtube were beneficial in helping me figure out where things were supposed to be. It made me realize that I am able to make a game similar to Mario and that I just need a solid idea for my projects. However, working within the constraints of recreating the original Mario game was difficult, as lining up parts to make it look like the original was time consuming. I wish that I could improve on the overall feel of the game. Playing an online version of the original Mario, I noticed that there were some differences within the mechanics that I was not able to replicate. In the original mario the camera is positioned so that it makes it so that players can not move backwards after moving forwards. Also I wish that I could have mimicked the running and jumping better because there is acceleration in Mario and that allows players to jump higher. Another aspect that would improve the game would be playtesting the game more. By doing so, this ensures that there are unwanted errors that occur within the game and make the play experience overall better.
+
+\## \*\*Self Evaluation\*\*
+
+In addition to the debrief, the Self Evaluation is an opportunity for you to talk about your work. You must rate each aspect of your project as a 1 - 5 or Pass/Fail (where appropriate), as well as write a short 1-2 sentence elaboration to justify your score, in the following areas:
+
+
+\*\*Execution\*\* (Did your project meet the theme you gave it?) - 4
+
+* Write your elaboration within the asterixis\*
+
+
+\*\*Scope\*\* (How well do you feel you scoped your game?) - 4
+
+
+* Write your elaboration within the asterixis\*
+
+
+\*\*Overall\*\* - Pass
