@@ -1,6 +1,6 @@
 ### **2023 Spring** - Ray Ma
 ### *Assignment 2* - Narrative Game
-Link to game: (itch link)
+Link to game: https://m00240.itch.io/ray-narrative-game
 
 
 ## **Debrief**
