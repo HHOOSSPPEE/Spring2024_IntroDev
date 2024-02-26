@@ -28,5 +28,8 @@ if(open_door && x == 384)
 else if (open_door && x == 1696)
 {
 	interacted = true;
-	obj_platform.move_down = true;
+	if(instance_exists(obj_platform))
+	{
+		obj_platform.move_down = true;
+	}
 }

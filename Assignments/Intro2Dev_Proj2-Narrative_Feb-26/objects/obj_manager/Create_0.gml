@@ -21,7 +21,7 @@ instance_create_layer(x, y, "Background", obj_bg);
 instruction = false; //if item interacble, show key map
 treasure_retrieved = false;
 count = 1;
-spawn_timer = 45;
+spawn_timer = 90;
 spawn_cd = spawn_timer;
 
 offset_y = -50;

@@ -36,6 +36,8 @@ if(conversing)
 			obj_screen.interactable = true;
 			spoken_to = true;
 			conversing = false;
+			instance_destroy(obj_platform);
+			instance_destroy();
 			break;
 	}
 }
