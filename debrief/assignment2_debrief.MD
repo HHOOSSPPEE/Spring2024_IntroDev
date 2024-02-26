@@ -1,6 +1,6 @@
 ### **2024 Spring** - AnthonyH
 ### *Assignment 2* - Narrative game
-Link to game: (itch link)
+Link to game: https://aug3ns73rn.itch.io/
 
 
 ## **Debrief**
