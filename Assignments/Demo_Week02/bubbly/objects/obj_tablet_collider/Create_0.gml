@@ -1,0 +1,1 @@
+tablet_text = "Bring 5 pearls to these gates to gain entry.";
