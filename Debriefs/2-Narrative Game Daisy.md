@@ -1,6 +1,6 @@
 ### **2024 Spring** Jiahe G
 ### *Assignment 2* Narrative Game, Daisy
-Link to game: https://j1ahee.itch.io/daisy-play-in-browser password: narrativegame
+Link to game: https://j1ahee.itch.io/daisy-play-in-browser
 
 ## **Debrief**
 The project centered around the theme of "empathy" proved to be a fulfilling endeavor. Initially grappling with the task of conceptualizing a storyline, I drew inspiration from my personal experiences with my two beloved cats, ultimately crafting a narrative that explored the profound bond between pets and their owners—a love devoid of any conditions. Given the narrative nature of the game, I opted to incorporate an abundance of dialogue and text elements, a departure from my previous projects, which proved to be a fitting choice.
