@@ -1,6 +1,6 @@
 ### **2023 Spring** - Leo Fu
 ### *Assignment 0* - Narrative Game -- Wash
-Link to game: (itch link)
+Link to game: (itch link) https://yf2360.itch.io/narrative-game-wash
 
 
 ## **Debrief**
