@@ -1,2 +1,0 @@
-start_dialogue("Ask");
-

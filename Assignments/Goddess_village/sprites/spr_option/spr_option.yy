@@ -48,8 +48,8 @@
   },
   "origin": 3,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "dialogue",
+    "path": "folders/Sprites/dialogue.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

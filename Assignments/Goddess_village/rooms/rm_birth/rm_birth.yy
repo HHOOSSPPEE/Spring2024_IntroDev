@@ -19,6 +19,7 @@
     {"name":"inst_58EFA883","path":"rooms/rm_birth/rm_birth.yy",},
     {"name":"inst_6F5851A0","path":"rooms/rm_birth/rm_birth.yy",},
     {"name":"inst_F2EA099","path":"rooms/rm_birth/rm_birth.yy",},
+    {"name":"inst_5E4FCE31","path":"rooms/rm_birth/rm_birth.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -35,6 +36,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_58EFA883","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_blocks","path":"objects/obj_blocks/obj_blocks.yy",},"properties":[],"rotation":0.0,"scaleX":2.703125,"scaleY":1.0,"x":651.0,"y":364.5,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F5851A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rdown","path":"objects/obj_rdown/obj_rdown.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-4.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F2EA099","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_rup","path":"objects/obj_rup/obj_rup.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.75,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5E4FCE31","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_virgina","path":"sprites/spr_virgina/spr_virgina.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

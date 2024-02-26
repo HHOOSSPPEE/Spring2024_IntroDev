@@ -79,6 +79,7 @@ options = [];
 current_option = 0;
 option_count = 0;
 
+option_changed = false;
 
 //all dialogue is going to be set in the global topics struct
 //Start a conversation

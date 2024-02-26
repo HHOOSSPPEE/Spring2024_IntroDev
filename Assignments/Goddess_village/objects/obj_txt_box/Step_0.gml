@@ -33,18 +33,23 @@ if (text_progress == text_length) {
 		
 		// Select an option!
 		if (confirm) {
+			audio_play_sound(snd_select_txt, 10, false);
 			var option = options[current_option];
 			options = [];
 			option_count = 0;
+			
+			option_changed = true;
 			
 			option.act(id);
 		}
 	}
 	else if (confirm) {
+		audio_play_sound(snd_select_txt, 10, false);
 		next();
 	}
 }
 else if (confirm) {
+	audio_play_sound(snd_select_txt, 10, false);
 	text_progress = text_length;
 }
 

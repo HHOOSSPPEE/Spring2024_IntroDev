@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_player",
+  "name": "spr_wangpo",
   "bbox_bottom": 240,
-  "bbox_left": 2,
+  "bbox_left": 0,
   "bbox_right": 235,
-  "bbox_top": 0,
+  "bbox_top": 45,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69bdc3c6-74ca-4eb2-a355-9a2d150b1439",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"636bfa3c-dd02-48f3-bc22-b29f3022a58a",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 241,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ae906cf0-70dc-47c2-ad47-5aaab0c7d327","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a8656be1-b4c3-4ff4-85ac-a6e3195ec263","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_player",
+    "name": "spr_wangpo",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"69bdc3c6-74ca-4eb2-a355-9a2d150b1439","path":"sprites/spr_player/spr_player.yy",},},},"Disabled":false,"id":"30702abe-1f1a-4038-8b2a-b07d97cc58fe","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"636bfa3c-dd02-48f3-bc22-b29f3022a58a","path":"sprites/spr_wangpo/spr_wangpo.yy",},},},"Disabled":false,"id":"89cd2dc2-e1b0-489b-afa4-f8b4a891c495","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
