@@ -89,8 +89,8 @@
     {"id":{"name":"rm_birth","path":"rooms/rm_birth/rm_birth.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"rm_birth","path":"rooms/rm_birth/rm_birth.yy",},},
+    {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"roomId":{"name":"rm_baby","path":"rooms/rm_baby/rm_baby.yy",},},
     {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"rm_meet_village_head","path":"rooms/rm_meet_village_head/rm_meet_village_head.yy",},},

@@ -171,7 +171,21 @@ global.topics[$ "On the way to Village"] = [
 	TEXT("I can't... I gotta ask the village head...")
 ];
 
-
+global.topics[$ "Let me see vh"] = [
+	SPEAKER("You", spr_player, PORTRAIT_SIDE.LEFT),
+	TEXT("So this is the village head's house."),
+	TEXT("Let me knock on the door"),
+	SPEAKER("", noone, noone),
+	TEXT("Knock knock"),
+	SPEAKER("??", noone, noone),
+	TEXT("Who is it?"),
+	SPEAKER("", noone, noone),
+	TEXT("An old male voice coming from inside of the house. Sounded with a bit of frustration"),
+	SPEAKER("You", spr_player, PORTRAIT_SIDE.LEFT),
+	TEXT("Hello! I'm a visitor to the village. May I talk to the head of the village please?"),
+	SPEAKER("??", noone, noone),
+	TEXT("Oh...oh okay, come in first please"),
+];
 
 /*
 TEXT(""),

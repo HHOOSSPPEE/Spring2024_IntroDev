@@ -133,12 +133,12 @@ switch(gamestate){
 				dialogue_num++;
 				gamestate = GameState.Explore;
 			break;
-			/*
 			case 7:
-				start_dialogue("complement");
+				start_dialogue("Let me see vh");
 				dialogue_num++;
 				gamestate = GameState.Explore;
 			break;
+			/*
 			case 8:
 				start_dialogue("complement");
 				dialogue_num++;
