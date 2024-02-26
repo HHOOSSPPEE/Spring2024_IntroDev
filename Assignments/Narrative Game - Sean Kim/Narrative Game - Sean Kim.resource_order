@@ -1,0 +1,16 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"spr_tree","order":1,"path":"sprites/spr_tree/spr_tree.yy",},
+    {"name":"obj_npc8","order":4,"path":"objects/obj_npc8/obj_npc8.yy",},
+    {"name":"spr_bridge","order":2,"path":"sprites/spr_bridge/spr_bridge.yy",},
+    {"name":"spr_bush","order":3,"path":"sprites/spr_bush/spr_bush.yy",},
+    {"name":"obj_river","order":1,"path":"objects/obj_river/obj_river.yy",},
+    {"name":"obj_bridge","order":5,"path":"objects/obj_bridge/obj_bridge.yy",},
+    {"name":"obj_tree","order":3,"path":"objects/obj_tree/obj_tree.yy",},
+    {"name":"obj_faint","order":6,"path":"objects/obj_faint/obj_faint.yy",},
+    {"name":"obj_faint_wall","order":8,"path":"objects/obj_faint_wall/obj_faint_wall.yy",},
+    {"name":"obj_bush","order":7,"path":"objects/obj_bush/obj_bush.yy",},
+    {"name":"run","order":1,"path":"sounds/run/run.yy",},
+  ],
+}
