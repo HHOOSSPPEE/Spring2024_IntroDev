@@ -9,6 +9,8 @@ In at least 400 words, write a debrief. You must write a reflection on your assi
 - What resources and/or comments were most helpful to you?
 - What will you repeat or do differently next time?
 
+With the theme jealousy, I ended up making an arcade adventure game where the player discovers a treasure called the "Ultimate Energy" either through exploration or conversing with "towns people" scattering in an industrial and futuristic map.
+
 Please do not answer these questions individually, but include it in a paragraph format.
 
 ## **Self Evaluation**
