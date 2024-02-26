@@ -4,31 +4,22 @@
 ## **Debrief**
 In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
 
-- What did you end up making?
-- Which of the game’s aspects did you like about this project?
-- What resources and/or comments were most helpful to you?
-- What will you repeat or do differently next time?
+With the theme of jealousy, I ended up making an arcade adventure game where the player discovers a treasure called the "Ultimate Energy" either through exploration or conversing with "towns people" scattered in an industrial and futuristic map. After collecting the “Ultimate Energy,” monsters will spawn endlessly from the right side of the player, and there’s no other spaces for the player to maneuver, eventually forcing the player to death. There is no victory in this game. 
+My favorite aspect of the game is the aesthetic consistency. I designed most of the mechanics of the game before I started looking for assets, thus I was able to select assets with a complete list of sprites I need, and comprehensively cover everything I would need for my game. I also controlled the animations carefully so it feels well crafted. For example, the enemy only attacks after a cool down, and during the cool down I programmed it to stop the animation and movement. 
+I also like how clean in general my code is, especially with the player object. I was able to “outsource” the firing ability to another object - the gun. The general creation of variables were also concise and reused whenever possible. Most importantly, I divided my code into chunks that each control different functions. For example, to control animation, I have a block of code dedicated to nothing but animation, compared to (what I did before) to integrate more things into the same block since they share the same variable for check. Doing it this way has made things very simple and clear for me and I don’t have to navigate back and forth looking for a parameter that I had missed when debugging. 
+During this process, Gamemaker’s manual has been invaluable to me, especially with audio since it was my first time using audio in gamemaker. The manual provided very detailed documentations of applying audio and with examples, which really accelerated my learning process. The Gamemaker tutorials are also incredibly helpful as I am able to observe completed games with the coding approach that they have taken, which helps me evaluate and iterate the designs of my game and think about what it is I want my game to be.
+Next time, I would still definitely split my code into different chunks that each control different functions, despite some may check for the same variables. This is a novel trial that has proved to be extremely beneficial to my coding process. However, I will also try to utilize parent and child with the townspeople objects, since they basically share the exact same code. I originally did have a parent object, however, there were some issues with it I could solve within a reasonable time frame, thus I had to duplicate a lot of codes. It was not clear to me how to have variables unique to each instance, and control which townspeople are colliding with the player to display the correct dialogue. I will try to understand the parent and child in Gamemaker better and try to utilize them in similar situations. 
 
-With the theme jealousy, I ended up making an arcade adventure game where the player discovers a treasure called the "Ultimate Energy" either through exploration or conversing with "towns people" scattering in an industrial and futuristic map.
-
-Please do not answer these questions individually, but include it in a paragraph format.
 
 ## **Self Evaluation**
-In addition to the debrief, the Self Evaluation is an opportunity for you to talk about your work. You must rate each aspect of your project as a 1 - 5 or Pass/Fail (where appropriate), as well as write a short 1-2 sentence elaboration to justify your score, in the following areas:
-
-
 **Execution** (Did your project meet the theme you gave it?) - 5
-
-*Write your elaboration within the asterixis*
-
+I think my game sticks to the theme perfectly. The story arc of the game is where the player gains a super precious item that results in the jealousy of countless monsters, eventually exhausting the player to death. 
 
 **Scope** (How well do you feel you scoped your game?) - 5
 
+I think my game fits the scope pretty nicely, requiring at least 1 and usually 2 minutes 30 seconds to finish, which sticks closely to the designated scope of the game. I used way more than 8 visual assets and 3 audios.
 
-*Write your elaboration within the asterixis*
+**Overall** - Pass
 
+I think my game definitely passes as it meets all of the provided requirements.
 
-**Overall** - Pass/Fail
-
-
-*Write your elaboration within the asterixis*
