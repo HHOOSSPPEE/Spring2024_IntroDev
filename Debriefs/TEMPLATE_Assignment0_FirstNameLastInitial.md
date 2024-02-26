@@ -1,5 +1,5 @@
-### **2023 Spring** - FirstName LastInitial
-### *Assignment 0* - Assignment Name
+### **2023 Spring** - Name
+### *Assignment #* - Assignment Name
 Link to game: (itch link) test
 
 
