@@ -9,7 +9,9 @@ Next time I would probably separate enemies, tiles and other instances in differ
 ## **Self Evaluation**
 **Execution** (Did your project meet the theme you gave it?) - 3/5
 *I would say overall the game meets the requirements. I could do better on Kirby's abilities but other than that it works fine.*
+
 **Scope** (How well do you feel you scoped your game?) - 4/5
 *I did my best for a clone game. However I could do more with better time management.*
+
 **Overall** - Pass
 *It was fine^^*
