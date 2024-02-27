@@ -6,13 +6,13 @@ function checkCollision(obj) {
 	var objY = Ground + abs(obj.yValue-obj_chr.yValue-obj_chr.ySpeed)*obj.yCorrectRatio;
 	var imageScale = 1-((obj_chr.yValue+obj_chr.ySpeed-obj.yValue)*obj.scaleCorrectRatio);
     // calculate collision mask
-    var obj_left = objX- (obj.sprite_width * imageScale / 2);
-    var obj_right = objX + (obj.sprite_width * imageScale / 2);
+    var obj_left = objX- (obj.collisionMaskWidthLeft * imageScale);
+    var obj_right = objX + (obj.collisionMaskWidthRight * imageScale);
     var obj_top = objY - obj.collisionMaskHeight;
     var obj_bottom = objY 
 
-    var chr_left = obj_chr.x - (obj_chr.sprite_width / 2);
-    var chr_right = obj_chr.x + (obj_chr.sprite_width / 2);
+    var chr_left = obj_chr.x + obj_chr.xSpeed - (obj_chr.sprite_width / 2);
+    var chr_right = obj_chr.x + obj_chr.xSpeed + (obj_chr.sprite_width / 2);
     var chr_top = obj_chr.y - (obj_chr.sprite_height / 2);
     var chr_bottom = obj_chr.y + (obj_chr.sprite_height / 2);
 
