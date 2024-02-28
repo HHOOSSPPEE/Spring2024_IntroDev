@@ -32,50 +32,38 @@ else{
 
 // collision
 
-if (place_meeting((x+xSpeed),y,par_object)){// horizontal
-	if (instance_place((x+xSpeed),y,par_object).collision){
-		while (abs(xSpeed)>0.1){
-			xSpeed /= 2;
-			if(!place_meeting((x+xSpeed),y,par_object)){
-				x += xSpeed;
-			}
-		}
-		xSpeed = 0;
-	}
-}
-
-if (place_meeting(x,(y+ySpeed),par_object)){// horizontal
-	if (instance_place(x,(y+ySpeed),par_object).collision){
-		while (abs(ySpeed)>0.1){
-			ySpeed /= 2;
-			if(!place_meeting(x,(y+ySpeed),par_object)){
-				y += ySpeed;
-			}
-		}
-		ySpeed = 0;
-	}
-}
-//}
-//with(par_object){
-//	if (checkCollision(self)){
-//		if (self.collision){
-//			while (abs(obj_chr.xSpeed)>0.1){
-//				obj_chr.xSpeed /= 2;
-//				if(!(checkCollision(self))){
-//					obj_chr.x += obj_chr.xSpeed;
-//				}
+//if (place_meeting((x+xSpeed),y,par_object)){// horizontal
+//	if (instance_place((x+xSpeed),y,par_object).collision){
+//		while (abs(xSpeed)>0.1){
+//			xSpeed /= 2;
+//			if(!place_meeting((x+xSpeed),y,par_object)){
+//				x += xSpeed;
 //			}
-//			obj_chr.xSpeed = 0;
-//			while (abs(obj_chr.ySpeed)>0.1){
-//				obj_chr.ySpeed /= 2;
-//				if(!(checkCollision(self))){
-//					obj_chr.yValue += obj_chr.ySpeed;
-//				}
-//			}
-//			obj_chr.ySpeed = 0;
 //		}
+//		xSpeed = 0;
 //	}
 //}
+//}
+with(par_object){
+	if (checkCollision(self)){
+		if (self.collision){
+			while (abs(obj_chr.xSpeed)>0.1){
+				obj_chr.xSpeed /= 2;
+				if(!(checkCollision(self))){
+					obj_chr.x += obj_chr.xSpeed;
+				}
+			}
+			obj_chr.xSpeed = 0;
+			while (abs(obj_chr.ySpeed)>0.1){
+				obj_chr.ySpeed /= 2;
+				if(!(checkCollision(self))){
+					obj_chr.yValue += obj_chr.ySpeed;
+				}
+			}
+			obj_chr.ySpeed = 0;
+		}
+	}
+}
 
 // implement movement
 x+=xSpeed;
