@@ -34,7 +34,7 @@ switch (state){
 		break;
 	
 	// hide state
-	case Player1State.hide:
+	case Player1State.drag:
 		acc = slowAcc;
 		maxV = slowMaxV;
 		break;
@@ -43,6 +43,14 @@ switch (state){
 	case Player1State.sniff:
 		acc = slowAcc;
 		maxV = slowMaxV;
+		
+		preyLeft = PreysTracking()[0];
+		preyRight = PreysTracking()[1];
+		// hold to sniff
+		//if (sniffingTime++ <= 100){
+		//	shootingTime = 0;
+		//	canShoot = false;
+		//}
 		break;
 }
 
@@ -55,9 +63,9 @@ doubleClickedA = resultA[0];
 lastKeyPressTimeA = resultA[1];// record last time player pressed a for next check
 	
 // change state
-state = SpeedChange(state,doubleClickedA,doubleClickedD,tired,dashEnergy);
+state = SpeedChange(state,doubleClickedA,doubleClickedD,tired,dashEnergy,Player1State.dash,Player1State.walk);
 state = Sniffing(keyUp,state);
-state = Hiding(keyDown,state);
+state = Dragging(keyDown,state);
 
 // horizontal movement
 if ((keyRight - keyLeft)!=0){// accelerate

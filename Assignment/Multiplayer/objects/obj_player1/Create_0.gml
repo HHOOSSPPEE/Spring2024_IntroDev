@@ -27,7 +27,12 @@ isGrounded = 6;
 enum Player1State{
 	walk, 
 	dash, 
-	hide,
+	drag,
 	sniff,
 }
 state = Player1State.walk;
+
+// sniffing
+preyLeft = false;
+preyRight = false;
+sniffingTime = 0;
