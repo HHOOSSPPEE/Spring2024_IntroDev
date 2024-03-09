@@ -95,19 +95,19 @@
 	
 	// detect preys from large distance
 	function PreysTracking(){
+		// is prey on left, right, or too far
+		var right = false;
+		var left = false;
 		with (par_preys){
-			// is prey on left, right, or too far
-			var right = false;
-			var left = false;
 			// check if enemies within certain area
 			var outerBound = (x > obj_camera.x-obj_camera.camWidth*1.5 && x < obj_camera.x+obj_camera.camWidth*1.5
-			&& y > obj_camera.y-obj_camera.camHeight*1.5 && y < obj_camera.y+obj_camera.camHeight*1.5);
-			var innerBound = (x > obj_camera.x-obj_camera.camWidth/2 && x < obj_camera.x+obj_camera.camWidth/2
+			&& y > obj_camera.y-obj_camera.camHeight*2 && y < obj_camera.y+obj_camera.camHeight*2);
+			var innerBound = (x > obj_camera.x-obj_camera.camWidth/1.8 && x < obj_camera.x+obj_camera.camWidth/1.8
 			&& y > obj_camera.y-obj_camera.camHeight/2 && y < obj_camera.y+obj_camera.camHeight/2);
 
 			if (outerBound && !innerBound){
 				// direction of prey
-				if (self.x-other.x<=0){
+				if (x-other.x<=0){
 					left = true;
 				}
 				else{

@@ -43,7 +43,6 @@ switch (state){
 	case Player1State.sniff:
 		acc = slowAcc;
 		maxV = slowMaxV;
-		
 		preyLeft = PreysTracking()[0];
 		preyRight = PreysTracking()[1];
 		// hold to sniff
