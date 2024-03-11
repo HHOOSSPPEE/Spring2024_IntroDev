@@ -43,7 +43,7 @@ segments with more intuitive controls.
 **Execution** - 5
 
 *My theme was hands, which are the main characters of the game and the
-center of the small story. *
+center of the small story.*
 
 **Scope** - 5
 
