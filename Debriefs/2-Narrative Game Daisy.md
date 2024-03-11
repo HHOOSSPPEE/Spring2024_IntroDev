@@ -1,5 +1,5 @@
 ### **2024 Spring** Jiahe G
-### *Assignment 2* Narrative Game, Daisy
+### *Assignment 2 - Narrative Game, Daisy*
 Link to game: https://j1ahee.itch.io/daisy-play-in-browser
 
 ## **Debrief**
