@@ -1,15 +1,17 @@
-//target the player
-if(target != noone && x > 0 && x+camWidth < room_width)
+//update destination
+if(instance_exists(target))
 {
 	xCam = target.x;
+	yCam = target.y;
 }
 
-//camera smoothing
-x += (xCam-x)/10; //arbitrary smoothing amount
+//update object position
+x += (xCam - x) / 25;
+y += (yCam - y) / 25;
 
 //clamp camera coordinates to stay within the room
-var viewX = clamp(x - camWidth * 0.5, 0, room_width - camWidth);
-var viewY = clamp(y - camHeight * 0.5, 0, room_height - camHeight);
+x = clamp(x, view_half_w, room_width-view_half_w);
+y = clamp(y, view_half_h, room_height-view_half_h);
 
-//set camera
-camera_set_view_pos(view_camera[0], viewX, viewY);
+//update camera view
+camera_set_view_pos(cam, x-view_half_w, y-view_half_h);

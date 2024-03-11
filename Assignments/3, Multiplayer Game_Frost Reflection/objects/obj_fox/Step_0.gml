@@ -9,15 +9,27 @@ hsp = move * run_sp;
 vsp = vsp + grv;
 
 //jump
-if(place_meeting(x, y+1, obj_collider) && (key_jump))
+if(place_meeting(x, y+1, obj_collider_fox)
+|| place_meeting(x, y+1, obj_platform_regular)
+|| place_meeting(x, y+1, obj_platform_1)
+|| place_meeting(x, y+1, obj_appear))
 {
-	vsp = -10;
+	if(key_jump)
+	{
+		vsp = -10;
+	}
 }
 
 //horizontal collision
-if(place_meeting(x+hsp, y, obj_collider))
+if(place_meeting(x+hsp, y, obj_collider_fox) 
+|| place_meeting(x+hsp, y, obj_appear)
+|| place_meeting(x+hsp, y, obj_platform_regular)
+|| place_meeting(x+hsp, y, obj_platform_1))
 {
-	while(!place_meeting(x+sign(hsp), y, obj_collider)) 
+	while(!place_meeting(x+sign(hsp), y, obj_collider_fox)
+	&& !place_meeting(x+sign(hsp), y, obj_appear)
+	&& !place_meeting(x+sign(hsp), y, obj_platform_regular)
+	&& !place_meeting(x+sign(hsp), y, obj_platform_1)) 
 	//sign() gets only the sign, eg.-4 → -1
 	{
 		x = x + sign(hsp); //so that it won't stuck on the wall
@@ -27,9 +39,15 @@ if(place_meeting(x+hsp, y, obj_collider))
 x = x + hsp;
 
 //vertical collision
-if(place_meeting(x, y+vsp, obj_collider))
+if(place_meeting(x, y+vsp, obj_collider_fox)
+|| place_meeting(x, y+vsp, obj_appear)
+|| place_meeting(x, y+vsp, obj_platform_regular)
+|| place_meeting(x, y+vsp, obj_platform_1))
 {
-	while(!place_meeting(x, y+sign(vsp), obj_collider)) 
+	while(!place_meeting(x, y+sign(vsp), obj_collider_fox)
+	&& !place_meeting(x, y+sign(vsp), obj_appear)
+	&& !place_meeting(x, y+sign(vsp), obj_platform_regular)
+	&& !place_meeting(x, y+sign(vsp), obj_platform_1)) 
 	{
 		y = y + sign(vsp);
 	}
@@ -38,36 +56,17 @@ if(place_meeting(x, y+vsp, obj_collider))
 y = y + vsp;
 
 //animation
-/*
-if(move != 0)
-{
-	image_xscale = move * -1;
-}
-if(place_meeting(x, y+1, obj_collider)) //about to move
-{
-	if(move != 0)
-	{
-		sprite_index = spr_fox_run;
-	}
-	else
-	{
-		sprite_index = spr_fox_idle;
-	}
-}
-*/
-
 if(hsp > 0)
-{
-	sprite_index = spr_fox_run;
-	image_xscale = -1;
-}
-else if(hsp < 0)
 {
 	sprite_index = spr_fox_run;
 	image_xscale = 1;
 }
+else if(hsp < 0)
+{
+	sprite_index = spr_fox_run;
+	image_xscale = -1;
+}
 else if(hsp == 0)
 {
 	sprite_index = spr_fox_idle;
-	//show_debug_message("stay" + hsp)
 }

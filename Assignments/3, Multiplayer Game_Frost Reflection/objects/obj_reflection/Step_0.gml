@@ -9,15 +9,21 @@ hsp = move * run_sp;
 vsp = vsp + grv;
 
 //jump
-if(place_meeting(x, y-1, obj_collider) && (key_jump))
+if(place_meeting(x, y-1, obj_collider_re)
+|| place_meeting(x, y-1, obj_platform_regular))
 {
-	vsp = 10;
+	if(key_jump)
+	{
+		vsp = 10;
+	}
 }
 
 //horizontal collision
-if(place_meeting(x+hsp, y, obj_collider))
+if(place_meeting(x+hsp, y, obj_collider_re)
+|| place_meeting(x+hsp, y, obj_platform_regular))
 {
-	while(!place_meeting(x+sign(hsp), y, obj_collider)) 
+	while(!place_meeting(x+sign(hsp), y, obj_collider_re)
+	&& !place_meeting(x+sign(hsp), y, obj_platform_regular))
 	//sign() gets only the sign, eg.-4 → -1
 	{
 		x = x + sign(hsp); //so that it won't stuck on the wall
@@ -27,9 +33,11 @@ if(place_meeting(x+hsp, y, obj_collider))
 x = x + hsp;
 
 //vertical collision
-if(place_meeting(x, y+vsp, obj_collider))
+if(place_meeting(x, y+vsp, obj_collider_re)
+|| place_meeting(x, y+vsp, obj_platform_regular))
 {
-	while(!place_meeting(x, y+sign(vsp), obj_collider)) 
+	while(!place_meeting(x, y+sign(vsp), obj_collider_re)
+	&& !place_meeting(x, y+sign(vsp), obj_platform_regular)) 
 	{
 		y = y + sign(vsp);
 	}
@@ -38,32 +46,17 @@ if(place_meeting(x, y+vsp, obj_collider))
 y = y + vsp;
 
 //animation
-/*
-if(move != 0)
+if(hsp > 0)
 {
-	image_xscale = move * -1;
-}
-if(place_meeting(x, y+1, obj_collider)) //about to move
-{
-	if(move != 0)
-	{
-		sprite_index = spr_fox_run;
-	}
-	else
-	{
-		sprite_index = spr_fox_idle;
-	}
-}
-*/
-
-var current_sprite = spr_reflection_idle;
-if(key_left)
-{
-	current_sprite = spr_reflection_run;
+	sprite_index = spr_reflection_run;
 	image_xscale = 1;
 }
-if(key_right)
+else if(hsp < 0)
 {
-	current_sprite = spr_reflection_run;
+	sprite_index = spr_reflection_run;
 	image_xscale = -1;
+}
+else if(hsp == 0)
+{
+	sprite_index = spr_reflection_idle;
 }
