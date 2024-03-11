@@ -137,12 +137,12 @@
 	}
 	
 	// create arrow
-	function CreateArrow(playerX,playerY,spriteWidth,spriteHeight,shootDistance){
+	function CreateArrow(playerX,playerY,shootDistance){
 		var arrowStruct =
 		{
 			distance : shootDistance
 		};
-		instance_create_layer((playerX+spriteWidth/2),(playerY+spriteHeight/2),"ArrowInstances",obj_arrow,arrowStruct)
+		instance_create_layer((playerX),(playerY),"ArrowInstances",obj_arrow,arrowStruct)
 	}
 	
 	// detect preys
@@ -152,12 +152,11 @@
 			if (x > obj_camera.x-obj_camera.camWidth/2 && x < obj_camera.x+obj_camera.camWidth/2
 			&& y > obj_camera.y-obj_camera.camHeight/2 && y < obj_camera.y+obj_camera.camHeight/2){
 				// distance from player to prey
-				var distance = self.x-other.x;
-				if (distance<=0){
-					other.preysInScreenL[array_length(other.preysInScreenL)] = (distance);
+				if (self.x-other.x<=0){
+					other.preysInScreenL[array_length(other.preysInScreenL)] = self;
 				}
 				else{
-					other.preysInScreenR[array_length(other.preysInScreenR)] = (distance);
+					other.preysInScreenR[array_length(other.preysInScreenR)] = self;
 				}
 			}
 		}
@@ -168,24 +167,24 @@
 	function ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR){
 		var lastKeyPressed = (lastKeyPressTimeL>lastKeyPressTimeR) ? -1 : 1;// -1 if last key is left, 1 if right
 		// randomly shoot if no prey detected
-		var closest = random_range(300,500)*lastKeyPressed;
+		var closest = random_range(300,obj_camera.camWidth/2-200)*lastKeyPressed;
 		var front = lastKeyPressed>1 ? preysInScreenR : preysInScreenL;
 		var back = lastKeyPressed>1 ? preysInScreenL : preysInScreenR;
 		if (array_length(front)!=0){
-			closest = front[0];
+			closest = front[0].x-x;
 			for (i=1;i<array_length(front);i++){
 				// if left key pressed, check preys on the left, and vice versa
-				if (abs(front[i])<abs(closest)){
-					closest = front[i];
+				if (abs(front[i].x-x)<abs(closest)){
+					closest = front[i].x-x;
 				}
 			}
 		}
 		else if (array_length(front)==0 && array_length(back)!=0){
-			closest = back[0];
+			closest = back[0].x-x;
 			for (i=1;i<array_length(back);i++){
 				// if left key pressed, check preys on the left, and vice versa
-				if (abs(back[i])<abs(closest)){
-					closest = back[i];
+				if (abs(back[i].x-x)<abs(closest)){
+					closest = back[i].x-x;
 				}
 			}
 		}

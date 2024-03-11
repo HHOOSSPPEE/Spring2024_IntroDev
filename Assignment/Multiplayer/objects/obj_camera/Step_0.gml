@@ -8,17 +8,17 @@ if (target != noone){
 	xCam = target.x + swayX;
 	yCam = target.y + swayY;
 	var playerDis = abs(obj_player1.x-obj_player2.x)
-	if (playerDis>576 && playerDis<=936){
+	if (playerDis>432 && playerDis<=756){
 		obj_target.maxCamWidth=false;
-		newCamWidth = 864+(playerDis-576)*1.2;
+		newCamWidth = 1296+(playerDis-432)*2;
 	}
-	else if (playerDis<=576){
+	else if (playerDis<=432){
 		obj_target.maxCamWidth=false;
-		newCamWidth = 864;
+		newCamWidth = 1296;
 	}
 	else{
 		obj_target.maxCamWidth=true;
-		newCamWidth=1296;
+		newCamWidth=1944;
 	}
 	newCamHeight = newCamWidth / cameraRatio;
 }

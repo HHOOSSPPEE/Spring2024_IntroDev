@@ -15,7 +15,7 @@ else{
 		closer = obj_player1.x;
 	}
 	// follow the closer player when not too far
-	if ((abs(further-closer)>1116)&&(abs(further-closer)<=1928)){
-		x=closer+((obj_camera.newCamWidth)/2.5*sign(x-closer));
+	if ((abs(further-closer)>1200)&&(abs(further-closer)<=2200)){
+		x=closer+((obj_camera.newCamWidth)/4.5*sign(x-closer));
 	}
 }

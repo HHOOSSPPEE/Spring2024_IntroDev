@@ -45,11 +45,14 @@ switch (state){
 		maxV = slowMaxV;
 		preysInScreenL = DetectPreys(preysInScreenL,preysInScreenR)[0];
 		preysInScreenR = DetectPreys(preysInScreenL,preysInScreenR)[1];
+		preysInScreen = array_concat(preysInScreenL,preysInScreenR)
 		var closest = ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR);
 
 		// hold to shoot
 		if ((shootingTime++ > shootingThreshold)&&(canShoot)){
-			CreateArrow(x,y,sprite_width,sprite_height,closest);
+			// shooting make preys alert
+			alarm[0] = game_get_speed(gamespeed_fps);
+			CreateArrow(x,y,closest);
 			shootingTime = 0;
 			canShoot = false;
 		}
@@ -58,7 +61,7 @@ switch (state){
 		}
 		preysInScreenL =[];// empty the prey array
 		preysInScreenR =[];
-		break;
+		break;	
 }
 
 // check if double-clicked
@@ -73,6 +76,12 @@ lastKeyPressTimeL = resultL[1];// record last time player pressed a for next che
 state = SpeedChange(state,doubleClickedL,doubleClickedR,tired,dashEnergy,Player2State.dash,Player2State.walk);
 state = Hiding(keyDown,state);
 state = Shooting(keyUp,state);
+if (state == Player2State.hide){
+	alertDistance = hideAlert;
+}
+else{
+	alertDistance = normalAlert;
+}
 
 // horizontal movement
 if ((keyRight - keyLeft)!=0){// accelerate

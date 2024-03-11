@@ -32,6 +32,7 @@
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"spr_prey_walk","order":11,"path":"sprites/spr_prey_walk/spr_prey_walk.yy",},
     {"name":"obj_kirby","order":7,"path":"objects/obj_kirby/obj_kirby.yy",},
+    {"name":"par_players","order":10,"path":"objects/par_players/par_players.yy",},
     {"name":"par_collision","order":3,"path":"objects/par_collision/par_collision.yy",},
     {"name":"spr_arrow","order":9,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_pointer","order":7,"path":"sprites/spr_pointer/spr_pointer.yy",},

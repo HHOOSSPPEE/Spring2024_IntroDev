@@ -1,6 +1,6 @@
 xSpeed = 0.5;
-xSpeedWalk = 0.5;
-xSpeedRun = 1.5
+xSpeedWalk = 1;
+xSpeedRun = 3;
 ySpeed = 0;
 grv = 0.8;
 isGrounded = 6;
@@ -10,6 +10,7 @@ enum KirbyState{
 	walk, 
 	stop,
 	run,
+	dragged,
 }
 state = KirbyState.walk
 
@@ -23,4 +24,5 @@ stopTimer = 0;
 maxStopTime = irandom_range(60,160);
 
 // detecting player
-alert = 1000; 
+alertThreshold = 200; 
+alert = 0;

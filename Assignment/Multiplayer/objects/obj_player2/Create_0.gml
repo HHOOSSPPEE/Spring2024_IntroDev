@@ -15,8 +15,8 @@ walkAcc= 0.18;// walk state acceleration
 walkMaxV= 1.8;
 dashAcc= 0.3;// dash state acceleration
 dashMaxV= 3;
-slowAcc= 0.06;// hide state acceleration
-slowMaxV= 0.6;
+slowAcc= 0.12;// hide state acceleration
+slowMaxV= 1.2;
 
 // vertical movement
 ySpeed = 0;
@@ -36,5 +36,11 @@ state = Player2State.walk;
 shootingTime = 0;
 shootingThreshold = 45;
 canShoot = true;
+preysInScreen = []
 preysInScreenL = [];
 preysInScreenR = []
+
+// alert signal
+alertDistance = 0;
+normalAlert = 400;
+hideAlert = 200;

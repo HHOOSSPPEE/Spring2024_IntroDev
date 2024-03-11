@@ -36,3 +36,11 @@ state = Player1State.walk;
 preyLeft = false;
 preyRight = false;
 sniffingTime = 0;
+
+// dragging
+preyContacted = noone;
+
+// alert signal
+alertDistance = 0;
+normalAlert = 400;
+hideAlert = 200;

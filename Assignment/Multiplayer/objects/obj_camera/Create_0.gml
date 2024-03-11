@@ -1,5 +1,5 @@
-camWidth = 864;
-camHeight = 576;
+camWidth = 1296;
+camHeight = 864;
 cameraRatio = camWidth/camHeight
 newCamWidth = camWidth;
 newCamHeight = camHeight;

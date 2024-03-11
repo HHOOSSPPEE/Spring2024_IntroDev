@@ -33,23 +33,27 @@ switch (state){
 		tired = newDashInfo[1];
 		break;
 	
-	// hide state
+	// drag state
 	case Player1State.drag:
 		acc = slowAcc;
 		maxV = slowMaxV;
+		// drag prey to slow them down
+		preyContacted = instance_place(x,y,par_preys);
+		if (preyContacted){
+			preyContacted.state = KirbyState.dragged;
+			xSpeed = preyContacted.xSpeed*preyContacted.dir;
+			if (keyboard_check_released(ord("S"))){// when released, let prey go
+				preyContacted.state = KirbyState.run;
+				preyContacted = noone;
+			}
+		}
 		break;
-	
 	// sniff state
 	case Player1State.sniff:
 		acc = slowAcc;
 		maxV = slowMaxV;
 		preyLeft = PreysTracking()[0];
 		preyRight = PreysTracking()[1];
-		// hold to sniff
-		//if (sniffingTime++ <= 100){
-		//	shootingTime = 0;
-		//	canShoot = false;
-		//}
 		break;
 }
 
@@ -65,6 +69,12 @@ lastKeyPressTimeA = resultA[1];// record last time player pressed a for next che
 state = SpeedChange(state,doubleClickedA,doubleClickedD,tired,dashEnergy,Player1State.dash,Player1State.walk);
 state = Sniffing(keyUp,state);
 state = Dragging(keyDown,state);
+if (state == Player1State.drag){
+	alertDistance = hideAlert;
+}
+else{
+	alertDistance = normalAlert;
+}
 
 // horizontal movement
 if ((keyRight - keyLeft)!=0){// accelerate

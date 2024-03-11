@@ -1,12 +1,14 @@
-if (xSpeed<0){
-	sprite_index = spr_prey_walk;
-	image_xscale = -1;
-}
-else if(xSpeed>0){
-	sprite_index = spr_prey_walk;
-	image_xscale = 1;
+if (state = KirbyState.stop){
+	sprite_index = spr_prey_idle;
 }
 else{
-	sprite_index = spr_prey_idle;
+	if (dir<0){
+		image_xscale = -1;
+		sprite_index = spr_prey_walk;
+	}
+	else if(dir>0){
+		image_xscale = 1;
+		sprite_index = spr_prey_walk;
+	}
 }
 draw_self();
