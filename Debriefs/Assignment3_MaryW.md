@@ -1,9 +1,9 @@
-\### \*\*2024 Spring\*\* - Mary W \### \*Assignment 3\* - Multiplayer
+### **2024 Spring** - Mary W ### *Assignment 3* - Multiplayer
 Game Link to game:
 
-\## \*\*Debrief\*\*
+## **Debrief**
 
-\*For this project, I made a multiplayer, QWOP-inspired fighting game
+For this project, I made a multiplayer, QWOP-inspired fighting game
 about your left and right hands fighting each other. A player gets a
 point when the opponent is pushed off the platform, and the first to
 three points wins. Players control their characters using the QWER and
@@ -35,22 +35,22 @@ the end, I decided for each player to use 4 keys, one for each segments
 direction; this control scheme would have been questionable if I had
 kept the 4 finger segments, using 8 keys each. Overall, I'm happy with
 how the project turned out, but I would have liked the fingers to have 4
-segments with more intuitive controls.\*
+segments with more intuitive controls.
 
-\## \*\*Self Evaluation\*\*
+## **Self Evaluation**
 
-\*\*Execution\*\* - 5
+**Execution** - 5
 
-\*My theme was hands, which are the main characters of the game and the
-center of the small story. \*
+*My theme was hands, which are the main characters of the game and the
+center of the small story. *
 
-\*\*Scope\*\* - 5
+**Scope** - 5
 
-\*I knew I wanted to learn more about the game maker physics engine, and
+*I knew I wanted to learn more about the game maker physics engine, and
 the game ended up mostly how I had planned, with only one small physics
-addition removed.\*
+addition removed.*
 
-\*\*Overall\*\* - Pass
+**Overall** - Pass
 
-\*I created a multiplayer game that uses a global variable to track a
-score, meeting the project requirements. \*
+*I created a multiplayer game that uses a global variable to track a
+score, meeting the project requirements.*
