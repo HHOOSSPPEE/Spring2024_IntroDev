@@ -1,4 +1,4 @@
-### **2024 Spring. Jiahe G.**
+### **2024 Spring Jiahe G**
 ### *Assignment 1- Kirby's Dream Land Clone Project*
 
 ## **Debrief**
