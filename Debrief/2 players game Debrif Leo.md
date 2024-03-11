@@ -1,6 +1,6 @@
 ### **2023 Spring** - Leo Fu
 ### *Assignment 3* - 2 players game -- Hunger
-Link to game: (itch link) 
+Link to game: ([itch link](https://yf2360.itch.io/hungry)) 
 
 
 ## **Debrief**
