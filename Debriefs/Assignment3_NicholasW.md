@@ -1,6 +1,6 @@
 ### **2023 Spring** - Nicholas Wong
 ### *Assignment 0* - multiplayer
-Link to game: (itch link)
+Link to game: https://nichlolasawong.itch.io/foil
 
 
 ## **Debrief**
