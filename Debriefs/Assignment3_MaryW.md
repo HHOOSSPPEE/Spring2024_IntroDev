@@ -1,5 +1,6 @@
-### **2024 Spring** - Mary W ### *Assignment 3* - Multiplayer
-Game Link to game:
+### **2024 Spring** - Mary W 
+### *Assignment 3* - Multiplayer Game 
+Link to game: https://marywdev.itch.io/in-which-your-hands-will-fight-to-the-death
 
 ## **Debrief**
 
