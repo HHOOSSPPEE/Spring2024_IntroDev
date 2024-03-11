@@ -13,7 +13,7 @@ The project was overall satisfying. Next time I would stick on to coding gamepla
 
 ## **Self Evaluation**
 **Execution** (Did your project meet the theme you gave it?) - 4/5
-*I overall met my expectations, but I could do better on details.*
+*It overall met my expectations, but I could do better on details.*
 
 **Scope** (How well do you feel you scoped your game?) - 4/5
 *Pretty good.*
