@@ -9,6 +9,7 @@ if(obj_textbox.current_sentence_index = 7){
 }
 if(obj_textbox.current_sentence_index = 14){
 	sprite_index = Sprite4;
+	audio_play_sound(Sound2, 1, false)
 }
 if(obj_textbox.current_sentence_index = 15){
 	sprite_index = Sprite5;
