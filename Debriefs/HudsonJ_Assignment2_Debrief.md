@@ -1,6 +1,6 @@
 ### **2024 Spring** - Hudson J
 ### *Assignment 2* - Narrative Game
-
+Link to Game:(https://hudsonjanow.itch.io/the-path-of-akosh)
 
 
 ## **Debrief**
