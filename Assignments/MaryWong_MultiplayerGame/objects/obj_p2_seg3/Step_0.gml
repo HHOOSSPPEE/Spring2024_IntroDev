@@ -1,0 +1,1 @@
+if(keyboard_check(ord("I"))) physics_apply_angular_impulse(50)
