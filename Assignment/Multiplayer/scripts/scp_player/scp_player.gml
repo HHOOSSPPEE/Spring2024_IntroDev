@@ -62,7 +62,6 @@
 			if (ySpeed > 0 ){
 				isGrounded = 6;
 			}
-	
 			while (abs(ySpeed) > 0.1){
 				ySpeed /= 2;
 				if (!place_meeting(playerX,(playerY+ySpeed),par_collision)){
@@ -142,7 +141,7 @@
 		{
 			distance : shootDistance
 		};
-		instance_create_layer((playerX),(playerY),"ArrowInstances",obj_arrow,arrowStruct)
+		instance_create_layer(playerX,playerY,"ArrowInstances",obj_arrow,arrowStruct)
 	}
 	
 	// detect preys
@@ -153,14 +152,14 @@
 			&& y > obj_camera.y-obj_camera.camHeight/2 && y < obj_camera.y+obj_camera.camHeight/2){
 				// distance from player to prey
 				if (self.x-other.x<=0){
-					other.preysInScreenL[array_length(other.preysInScreenL)] = self;
+					preysInScreenL[array_length(preysInScreenL)] = self;
 				}
 				else{
-					other.preysInScreenR[array_length(other.preysInScreenR)] = self;
+					preysInScreenR[array_length(preysInScreenR)] = self;
 				}
 			}
 		}
-		return [other.preysInScreenL,other.preysInScreenR];
+		return [preysInScreenL,preysInScreenR];
 	}
 	
 	// check which prey closest
@@ -168,8 +167,8 @@
 		var lastKeyPressed = (lastKeyPressTimeL>lastKeyPressTimeR) ? -1 : 1;// -1 if last key is left, 1 if right
 		// randomly shoot if no prey detected
 		var closest = random_range(300,obj_camera.camWidth/2-200)*lastKeyPressed;
-		var front = lastKeyPressed>1 ? preysInScreenR : preysInScreenL;
-		var back = lastKeyPressed>1 ? preysInScreenL : preysInScreenR;
+		var front = lastKeyPressed>0 ? preysInScreenR : preysInScreenL;
+		var back = lastKeyPressed>0 ? preysInScreenL : preysInScreenR;
 		if (array_length(front)!=0){
 			closest = front[0].x-x;
 			for (i=1;i<array_length(front);i++){

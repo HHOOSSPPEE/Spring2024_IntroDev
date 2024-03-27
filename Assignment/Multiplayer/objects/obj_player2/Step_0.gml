@@ -3,7 +3,6 @@ var keyRight = keyboard_check(vk_right);
 var keyLeft = keyboard_check(vk_left);
 var keyUp = keyboard_check(vk_up);
 var keyDown = keyboard_check(vk_down);
-
 // enable camera smoothing after player move
 if (keyRight||keyLeft||keyUp||keyDown){
 	obj_camera.enableSmoothing=true;
@@ -43,19 +42,20 @@ switch (state){
 	case Player2State.shoot:
 		acc = slowAcc;
 		maxV = slowMaxV;
-		preysInScreenL = DetectPreys(preysInScreenL,preysInScreenR)[0];
-		preysInScreenR = DetectPreys(preysInScreenL,preysInScreenR)[1];
+		var detectPreys = DetectPreys(preysInScreenL,preysInScreenR);
+		preysInScreenL = detectPreys[0];
+		preysInScreenR = detectPreys[1];
 		preysInScreen = array_concat(preysInScreenL,preysInScreenR)
-		var closest = ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR);
-
-		// hold to shoot
-		if ((shootingTime++ > shootingThreshold)&&(canShoot)){
-			// shooting make preys alert
+		// shooting make preys alert
+		if (shootNow){
 			alarm[0] = game_get_speed(gamespeed_fps);
-			CreateArrow(x,y,closest);
-			shootingTime = 0;
+			var closest = ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR);
+			CreateArrow(x+sprite_width/2,y-sprite_height/2,closest);
 			canShoot = false;
+			shootingAnimation = false;
+			shootNow=false;
 		}
+		// hold to shoot
 		if (keyboard_check_released(vk_up)){// no continous shooting
 			canShoot = true;
 		}
