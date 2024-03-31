@@ -1,18 +1,22 @@
 // item constructors
 function Item() constructor{
 	type = "";
-	value = 0;
+	dmg = 0;
+	cd = 0;
 	sprite = 0;
+	equiped = false;
 }
-function Sword(): Item() constructor{
-	type = "Sword";
-	value = 15;
-	sprite = spr_sword;
+function Pistol(): Item() constructor{
+	type = "Pistol";
+	dmg = 5;
+	cd = 30;
+	sprite = spr_pistol;
 }
-function Bow(): Item() constructor{
-	type = "Bow";
-	value = 10;
-	sprite = spr_bow;
+function Uzi(): Item() constructor{
+	type = "Uzi";
+	dmg = 2;
+	cd = 10;
+	sprite = spr_uzi;
 }
 //dictionary
 function InventorySearch(rootObject, itemType)
@@ -53,7 +57,7 @@ function InventoryAdd(rootObject, itemType)
 }
 
 function InventorySwap(objectFrom,slotFrom,objectTo,SlotTo){
-	var itemFrom = objectFrom.obj_inventory[slotFrom];
-	objectFrom.obj_inventory[slotFrom]=objectTo.inventory[SlotTo];
-	objectTo.obj_inventory[SlotTo] = itemFrom;
+	var itemFrom = objectFrom.inventory[slotFrom];
+	objectFrom.inventory[slotFrom]=objectTo.inventory[SlotTo];
+	objectTo.inventory[SlotTo] = itemFrom;
 }
