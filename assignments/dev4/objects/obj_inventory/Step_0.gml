@@ -6,7 +6,7 @@ if(keyboard_check_released(ord("Q")))
 }
 if(is_show_inventory == false)
 {
-	inventory.deselect();
+	_inventory.deselect();
 }
 
 //identifying mouse
@@ -18,13 +18,13 @@ if(is_show_inventory == true)
 		var my = device_mouse_y_to_gui(0);
 	}
 	var width_half = display_get_gui_width()/2;
-	var item_num_half = inventory.max_item/2;
+	var item_num_half = _inventory.max_item/2;
 	var sprite_width_padding = 86 + 64;
 	
 	var column_start = width_half - (sprite_width_padding*floor(item_num_half));
 	var colmn_stop = width_half + (sprite_width_padding*floor(item_num_half));
 	
-	var items = inventory.getAll();
+	var items = _inventory.getAll();
 	for(var i=0; i<array_length(items); i++)
 	{
 		if(mx > column_start + (i*sprite_width_padding)-24){
@@ -32,10 +32,10 @@ if(is_show_inventory == true)
 					if(items[i].hover ==true)
 					{
 						instance_create_depth(mouse_x,mouse_y,depth-1,obj_spawn)
-						inventory.remove(i);
+						_inventory.remove(i);
 					}
 					else{
-						inventory.select(i);
+						_inventory.select(i);
 					}
 				}
 		}

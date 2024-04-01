@@ -13,23 +13,24 @@ function Inventory() constructor {
 				hover: false});
 		}
 	}
-}
-getAll = function() {
-	return _inventory;
-}
-remove = function(index){
-	array_delete(_inventory,index,1);
-}
 
-select = function(index){
+	getAll = function() {
+	return _inventory;
+	}
+	remove = function(index){
+	array_delete(_inventory,index,1);
+	}
+
+	select = function(index){
 	deselect();
 	
 	_inventory[index].hover = true;
-}
+	}
 
-deselect = function(){
+	deselect = function(){
 	for(var i=0; i<array_length(_inventory); i++)
 	{
 		_inventory[i].hover = false;
+	}
 	}
 }

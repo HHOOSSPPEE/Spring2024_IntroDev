@@ -34,9 +34,10 @@
   },
   "name":"dev4",
   "resources":[
+    {"id":{"name":"obj_bag","path":"objects/obj_bag/obj_bag.yy",},},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},},
     {"id":{"name":"obj_spawn","path":"objects/obj_spawn/obj_spawn.yy",},},
-    {"id":{"name":"obj_bag","path":"objects/obj_bag/obj_bag.yy",},},
+    {"id":{"name":"obj_sign","path":"objects/obj_sign/obj_sign.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"inventory","path":"scripts/inventory/inventory.yy",},},
     {"id":{"name":"spr_bag","path":"sprites/spr_bag/spr_bag.yy",},},

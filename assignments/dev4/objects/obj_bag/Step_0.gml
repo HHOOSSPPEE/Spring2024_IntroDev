@@ -7,7 +7,7 @@ if(device_mouse_check_button_pressed(0,mb_left))
 	var invent = obj_inventory;
 }
 
-var allItems = inventory.getAll(); 
+var allItems = _inventory.getAll(); 
 
 
 var inventoryContents = "Inventory:\n";

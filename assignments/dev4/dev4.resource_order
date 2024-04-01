@@ -17,8 +17,9 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"obj_spawn","order":1,"path":"objects/obj_spawn/obj_spawn.yy",},
     {"name":"obj_bag","order":2,"path":"objects/obj_bag/obj_bag.yy",},
+    {"name":"obj_spawn","order":1,"path":"objects/obj_spawn/obj_spawn.yy",},
+    {"name":"obj_sign","order":3,"path":"objects/obj_sign/obj_sign.yy",},
     {"name":"spr_bag","order":6,"path":"sprites/spr_bag/spr_bag.yy",},
     {"name":"spr_dagger","order":3,"path":"sprites/spr_dagger/spr_dagger.yy",},
     {"name":"spr_inventory_background","order":5,"path":"sprites/spr_inventory_background/spr_inventory_background.yy",},

@@ -4,7 +4,7 @@
 if(is_show_inventory){
 	var width_half = display_get_gui_width()/2;
 	var height_half = display_get_gui_height()/2;
-	var item_num_half = inventory.max_item/2;
+	var item_num_half = _inventory.max_item/2;
 	var sprite_width_padding = 86 + 64;
 	
 	var xx = width_half - (sprite_width_padding *floor(item_num_half));
@@ -12,11 +12,11 @@ if(is_show_inventory){
 	
 	
 	//background
-	for(var i =0;i<inventory.max_item;i++)
+	for(var i =0;i<_inventory.max_item;i++)
 	{
 		draw_sprite(spr_inventory_background,0,xx+(sprite_width_padding*i),yy)
 	}
-	var items = inventory.getAll();
+	var items = _inventory.getAll();
 	for(var i=0; i<array_length(items); i++)
 	{
 		draw_sprite(items[i].sprite,0,xx+(sprite_width_padding*i),yy);
