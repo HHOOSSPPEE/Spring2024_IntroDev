@@ -1,5 +1,5 @@
 ### **2024 Spring** Jiahe G
-### *Assignment 4* Inventory Game, Ghost Factory
+### *Assignment 4 - Inventory Game, Ghost Factory*
 Link to game: (itch link)
 
 ## **Debrief**
