@@ -1,6 +1,6 @@
 ### **2024 Spring** Jiahe G
-### *Assignment 3* Multiplayer Game, Frost Reflection
-Link to game: (itch link)
+### *Assignment 3 - Multiplayer Game, Frost Reflection*
+Link to game: https://j1ahee.itch.io/frost-reflection
 
 ## **Debrief**
 For the multiplayer project I ended up creating a 2-player cooperative platformer in which they work together to navigate through levels. My initial idea was to make a game centered around the theme of “mirror,” where the two players would perform similar actions but in divergent directions. Subsequently, I incorporated mechanics where one player’s(the reflection) actions would aid the other, fostering increased communication between them during the game. In addition, in this game I tried introducing typewriter effects to text and dialogues and it turned out to be more interactive than simply drawing text to the canvas. Another thing new is that I added a short intro animation to the game so players would be provided with more narrative context before they actually start the game. I deliberately structured the levels to facilitate gradual learning of block mechanics and movement manipulation. The players would practice in the first level, learn about red blocks in the next, orange blocks after that, and eventually then would come to the level where they demonstrate their acquired skills by navigating levels containing both types of blocks.
@@ -13,7 +13,7 @@ The project was overall satisfying. Next time I would stick on to coding gamepla
 
 ## **Self Evaluation**
 **Execution** (Did your project meet the theme you gave it?) - 4/5
-*I overall met my expectations, but I could do better on details.*
+*It overall met my expectations, but I could do better on details.*
 
 **Scope** (How well do you feel you scoped your game?) - 4/5
 *Pretty good.*
