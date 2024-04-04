@@ -1,9 +1,10 @@
-\### \*\*2024 Spring\*\* - Mary W \### \*Assignment 4\* - Inventory Game
+### **2024 Spring** - Mary W 
+### *Assignment 4* - Inventory Game
 Link to game: https://marywdev.itch.io/overflow
 
-\## \*\*Debrief\*\*
+## **Debrief**
 
-\*For this project, I ended up making a game where you have to find and
+*For this project, I ended up making a game where you have to find and
 remove a specific item from your inventory, all while more and more
 things are being added to it. My theme was Excess, which can be seen in
 the constant addition of new items. The items in the game's inventory
@@ -35,21 +36,21 @@ refined art to the game, and possibly some narrative elements as well,
 but I didn't have the time. For my next project, I will try to create a
 more realistic scope for my game, continue trying to work on my time
 management, and try to become more comfortable asking for help when I
-need it.\*
+need it.*
 
-\## \*\*Self Evaluation\*\*
+## **Self Evaluation**
 
-\*\*Execution\*\* - 4
+**Execution** - 4
 
-\*My theme, excess, can be seen in the constant addition of new items to
-the inventory.\*
+*My theme, excess, can be seen in the constant addition of new items to
+the inventory.*
 
-\*\*Scope\*\* - 3
+**Scope** - 3
 
-\*I originally had a much more complex plan for the game, which I spent
+*I originally had a much more complex plan for the game, which I spent
 a lot of time on and was not able to complete. Because of this, my final
-product is not as finished as I would have liked.\*
+product is not as finished as I would have liked.*
 
-\*\*Overall\*\* - Pass
+**Overall** - Pass
 
-\*My game followed my theme and fulfilled the project requirements.\*
+*My game followed my theme and fulfilled the project requirements.*
