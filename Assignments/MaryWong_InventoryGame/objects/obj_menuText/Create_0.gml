@@ -1,0 +1,1 @@
+text = "How To Play\n\nuse your mouse to drag the\nrequired item into the first\ninventory slot. Move fast,\nbecause if the inventory fills\nup, it's game over!\n\nPress SPACE to begin"
