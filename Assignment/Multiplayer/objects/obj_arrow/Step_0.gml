@@ -7,6 +7,7 @@ image_angle = (arctan2(-ySpeed, xSpeed) * (180 / pi) - (45));
 // collision with preys
 var prey = instance_place(x,y,par_preys)
 if (prey){
+	global.preyHunted +=1;
 	instance_destroy(prey);
 	instance_destroy();
 }

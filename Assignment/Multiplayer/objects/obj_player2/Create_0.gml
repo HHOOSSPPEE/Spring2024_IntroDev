@@ -33,8 +33,8 @@ enum Player2State{
 state = Player2State.walk;
 
 // shooting
-shootingTime = 0;
-shootingThreshold = 45;
+shootNow = false;
+shootingAnimation = false;
 canShoot = true;
 preysInScreen = []
 preysInScreenL = [];

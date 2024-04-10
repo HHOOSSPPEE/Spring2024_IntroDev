@@ -11,4 +11,10 @@ else{
 		sprite_index = spr_prey_walk;
 	}
 }
+if (state = KirbyState.run){
+	image_speed = 2;
+}
+else{
+	image_speed = 1;
+}
 draw_self();

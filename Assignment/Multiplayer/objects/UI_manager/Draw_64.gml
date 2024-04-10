@@ -1,3 +1,5 @@
+// draw score
+draw_text(100,100,"kirby hunted = "+string(global.preyHunted))
 // draw arrow when player out of screen
 if ((obj_player1.x-obj_camera.x)>obj_camera.camWidth/2){
 	draw_sprite_ext(spr_pointer,0,view_get_wport(0)-sprite_get_width(spr_pointer),730,-1,1,0,c_white,1);
