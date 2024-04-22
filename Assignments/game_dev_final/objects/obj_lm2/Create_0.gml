@@ -1,0 +1,1 @@
+global.counter = 0;
