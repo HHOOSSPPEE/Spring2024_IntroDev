@@ -1,0 +1,1 @@
+fish3_text = "There's nothing but ruins here..." + "\n" + "I heard there's a temple in the deeper parts of" + "\n" + "these waters... I can't seem to find it."

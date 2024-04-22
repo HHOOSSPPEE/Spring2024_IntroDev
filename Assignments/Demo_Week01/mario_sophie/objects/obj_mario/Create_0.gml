@@ -1,0 +1,10 @@
+move_x = 0;
+move_y = 0;
+move_speed = 2;
+jump_speed = 11;
+_health = 1;
+hurt = false;
+invincible = false;
+invincible_timer = 60;
+status = 0;
+image_speed = 0.75;

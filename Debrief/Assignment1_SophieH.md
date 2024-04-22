@@ -1,0 +1,7 @@
+### **2024 Spring** - Sophie Hughes
+### *Assignment 1* - Clone Project
+Link to game: (itch link)
+
+
+## **Debrief**
+The project went generally well, I was able to complete the requirements and I am satisfied with the product. I would like to add more animations such as the jump, fireball, flagpole, or mystery boxes. Also, I would implement the coin collecting mechanic. I wonder if I should have made the underground area in the same room as the overworld, or which approach would have been easier. Since the source website did not offer a tilemap, I decided to create a tile map out of the map. I used photoshop to create the tile map and sprite sheets, which turned out to be more time consuming than expected. While working in class, my peers and I were able to catch one another’s mistakes, and give each other feedback or suggestions as we worked. For example, when I found out that I had missed a block type on my tile map, my friend reminded me that I could just edit the tile map sprite on Gamemaker instead of exporting from photoshop repeatedly. I ran into a lot of issues when implementing the player movement, to the point my game was crashing and froze. This time, I separated the collision layer and background layer for the tile map, and I would do the same next time, instead of manually adding collision boxes. I do wish I had allocated more time for mechanics such as a scoreboard or all of the animations. Overall, my project resembles what I was trying to clone through mechanics and graphics, so I would say it was a success. 
