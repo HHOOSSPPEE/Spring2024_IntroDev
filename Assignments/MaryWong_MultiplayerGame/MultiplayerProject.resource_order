@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -18,7 +18,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_p2_seg3","order":3,"path":"objects/obj_p2_seg3/obj_p2_seg3.yy",},
     {"name":"obj_p1_seg3","order":2,"path":"objects/obj_p1_seg3/obj_p1_seg3.yy",},
     {"name":"spr_player_two","order":7,"path":"sprites/spr_player_two/spr_player_two.yy",},
