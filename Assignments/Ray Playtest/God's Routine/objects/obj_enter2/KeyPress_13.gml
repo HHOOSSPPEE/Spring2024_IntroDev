@@ -1,0 +1,10 @@
+room_goto(Start);
+
+
+
+
+
+
+
+
+
