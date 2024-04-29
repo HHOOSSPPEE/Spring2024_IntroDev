@@ -23,6 +23,7 @@ ySpeed = 0;
 grv = 0.8;
 isGrounded = 6;
 
+
 // state
 enum Player1State{
 	walk, 

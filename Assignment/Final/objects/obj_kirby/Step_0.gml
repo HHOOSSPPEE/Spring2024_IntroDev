@@ -42,7 +42,11 @@ if (alert>alertThreshold){
 else{
 	state=KirbyState.walk;
 }
-	
+
+
+if (place_meeting(x,y,obj_deadzone)){
+	instance_destroy(self);
+}
 
 // check collision 
 var newXY = CollisionCheck(x,y,xSpeed,ySpeed,isGrounded);
