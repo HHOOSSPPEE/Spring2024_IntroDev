@@ -109,3 +109,39 @@ setText = function(newText){
 	text_length = string_length(newText);
 	text_progress = 0;
 }
+
+//set the background to sprite
+setBackground = function(spr){
+	obj_bg.sprite_index = spr;
+	
+	/*
+	var lay_id = layer_get_id("Background");
+	var back_id = layer_background_get_id(lay_id);
+	layer_background_sprite(back_id, sprite);
+	*/
+}
+
+// In the Create event of the object
+itemList = ds_list_create(); // Create a list to hold the items
+
+
+// Function to add items to be drawn
+drawItem = function(_sprite, _x, _y) {
+    var item = ds_map_create();
+    ds_map_add(item, "sprite", _sprite);
+    ds_map_add(item, "pos_x", _x);
+    ds_map_add(item, "pos_y", _y);
+    ds_list_add(itemList, item);
+};
+
+// Function to remove an item from the drawing list
+removeItem = function(_sprite) {
+    for (var i = 0; i < ds_list_size(itemList); i++) {
+        var item = ds_list_find_value(itemList, i);
+        if (ds_map_find_value(item, "sprite") == _sprite) {
+            ds_map_destroy(item); // Destroy the map for this item
+            ds_list_delete(itemList, i); // Remove the item from the list
+            break; // Exit the loop after removing the item
+        }
+    }
+};

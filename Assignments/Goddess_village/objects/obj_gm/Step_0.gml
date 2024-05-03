@@ -71,29 +71,6 @@ switch(gamestate){
 					gamestate = GameState.Dialogue;
 				}
 			break;
-			/*
-			case 7:
-				if (!instance_exists(obj_txt_box)){
-					obj_bg.sprite_index = noone;
-					sprite_num++;
-					gamestate = GameState.Dialogue;
-				}
-			break;
-			case 8:
-				if (!instance_exists(obj_txt_box)){
-					obj_bg.sprite_index = spr_see_statue;
-					sprite_num++;
-					gamestate = GameState.Dialogue;
-				}
-			break;
-			case 9:
-				if (!instance_exists(obj_txt_box)){
-					obj_bg.sprite_index = spr_see_statue;
-					sprite_num++;
-					gamestate = GameState.Dialogue;
-				}
-			break;
-			*/
 		}
 	break;
 	case GameState.Dialogue:
@@ -138,33 +115,6 @@ switch(gamestate){
 				dialogue_num++;
 				gamestate = GameState.Explore;
 			break;
-			/*
-			case 8:
-				start_dialogue("complement");
-				dialogue_num++;
-				gamestate = GameState.Explore;
-			break;
-			case 9:
-				start_dialogue("complement");
-				dialogue_num++;
-				gamestate = GameState.Explore;
-			break;
-			case 10:
-				start_dialogue("complement");
-				dialogue_num++;
-				gamestate = GameState.Explore;
-			break;
-			case 11:
-				start_dialogue("complement");
-				dialogue_num++;
-				gamestate = GameState.Explore;
-			break;
-			case 12:
-				start_dialogue("complement");
-				dialogue_num++;
-				gamestate = GameState.Explore;
-			break;
-			*/
 		}
 	break;
 }

@@ -4,8 +4,12 @@ global.topics = {};
 global.topics[$ "Bus"] = [
 	TEXT("Your name is Jess"),
 	TEXT("You are a documentary photographer."),
+	BG(spr_forrest1),
 	TEXT("You are really interested in diverse cultures and anecdotes."),
+	ITEM(spr_player, 500, 500),
+	ITEM(spr_old_ldy_pop, 800, 400),
 	TEXT("You've heard that there exists a small village by this mountain far away from the city."),
+	RMITEM(spr_old_ldy_pop),
 	TEXT("Unlike other remote villages, this one has always promoted the idea of valuing females over males, at least that's what's being told to the outside world."),
 	TEXT("Driven by a strong curiosity about this unique ideology, you decide to go alone with a camera to explore and find out more."),
 	TEXT("Before setting out, you've done a lot of research."),

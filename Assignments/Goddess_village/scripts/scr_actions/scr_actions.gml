@@ -3,6 +3,9 @@
 #macro CHOICE new choice_action
 #macro OPTION new option_action
 #macro GOTO new goto_action
+#macro BG new set_background
+#macro ITEM new draw_item
+#macro RMITEM new undraw_item
 
 function dialogue_action() constructor{
 	act = function(){
@@ -96,4 +99,51 @@ function goto_action(_topic) : dialogue_action() constructor{
 	act = function(text_box){
 		text_box.setTopic(topic);
 	}
+}
+
+
+/**
+ * Changes the background of the scene.
+ * @param {string} _background - The identifier (e.g., file path or name) for the new background image.
+ * This function updates the background of the current scene by passing the new background to
+ * the scene's `setBackground` method.
+ */
+function set_background(_background) : dialogue_action() constructor{
+    background = _background;
+    
+    act = function(text_box){
+        text_box.setBackground(background);
+    }
+}
+
+/**
+ * Draws an item, character, or any other sprite at a specified position in the scene.
+ * @param {string} _sprite - The identifier for the sprite to be drawn.
+ * @param {number} _x - The x-coordinate where the sprite will be placed.
+ * @param {number} _y - The y-coordinate where the sprite will be placed.
+ * This function places the specified sprite at the given coordinates by calling the `drawItem`
+ * method of the scene, which should handle the actual drawing/rendering.
+ */
+function draw_item(_sprite, _x, _y) : dialogue_action() constructor{
+    sprite = _sprite;
+    pos_x = _x;
+    pos_y = _y;
+    
+    act = function(text_box){
+        text_box.drawItem(sprite, pos_x, pos_y);
+    }
+}
+
+/**
+ * Removes a previously displayed sprite from the scene.
+ * @param {string} _sprite - The identifier for the sprite to be removed.
+ * This function removes the specified sprite from the scene by invoking the `removeItem`
+ * method of the scene, which should handle the cleanup and removal process.
+ */
+function undraw_item(_sprite) : dialogue_action() constructor{
+    sprite = _sprite;
+    
+    act = function(text_box){
+        text_box.removeItem(sprite);
+    }
 }

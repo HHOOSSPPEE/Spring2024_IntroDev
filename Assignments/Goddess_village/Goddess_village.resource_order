@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -17,11 +17,11 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"dialogue","order":1,"path":"folders/Sprites/dialogue.yy",},
     {"name":"rm intro","order":2,"path":"folders/Sprites/rm intro.yy",},
+    {"name":"rm meet village head","order":3,"path":"folders/Sprites/rm meet village head.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"rm meet village head","order":3,"path":"folders/Sprites/rm meet village head.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"obj_rdown","order":3,"path":"objects/obj_rdown/obj_rdown.yy",},
     {"name":"spr_start_but","order":8,"path":"sprites/spr_start_but/spr_start_but.yy",},
     {"name":"rm_intro","order":3,"path":"rooms/rm_intro/rm_intro.yy",},
