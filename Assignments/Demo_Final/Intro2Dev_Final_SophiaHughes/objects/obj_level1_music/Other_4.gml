@@ -1,0 +1,1 @@
+audio_play_sound(snd_bach_aria, 0, true);

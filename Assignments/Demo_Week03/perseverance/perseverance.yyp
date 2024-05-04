@@ -40,6 +40,7 @@
     {"id":{"name":"spr_enemy3","path":"sprites/spr_enemy3/spr_enemy3.yy",},},
     {"id":{"name":"obj_player2","path":"objects/obj_player2/obj_player2.yy",},},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},
+    {"id":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},},
     {"id":{"name":"spr_enemy2","path":"sprites/spr_enemy2/spr_enemy2.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"spr_collectible","path":"sprites/spr_collectible/spr_collectible.yy",},},
@@ -53,9 +54,12 @@
     {"id":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},},
     {"id":{"name":"ts_space","path":"tilesets/ts_space/ts_space.yy",},},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
+    {"id":{"name":"ts_baroque","path":"tilesets/ts_baroque/ts_baroque.yy",},},
     {"id":{"name":"obj_collectible3","path":"objects/obj_collectible3/obj_collectible3.yy",},},
     {"id":{"name":"spr_gate","path":"sprites/spr_gate/spr_gate.yy",},},
+    {"id":{"name":"tiles","path":"sprites/tiles/tiles.yy",},},
     {"id":{"name":"obj_enemy3","path":"objects/obj_enemy3/obj_enemy3.yy",},},
+    {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_projectile","path":"sprites/spr_projectile/spr_projectile.yy",},},
     {"id":{"name":"obj_score_text","path":"objects/obj_score_text/obj_score_text.yy",},},
     {"id":{"name":"obj_player1","path":"objects/obj_player1/obj_player1.yy",},},
@@ -67,6 +71,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_1","path":"rooms/rm_1/rm_1.yy",},},
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
+    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
