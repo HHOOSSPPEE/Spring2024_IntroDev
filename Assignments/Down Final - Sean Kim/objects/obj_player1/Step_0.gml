@@ -47,7 +47,7 @@ if (platform != noone) {
 }
 
 if (place_meeting(x, y, obj_trampoline)) {
-    vsp = -11; 
+    vsp = -14; 
 }
 
 if (place_meeting(x, y, obj_moving_platform)) {

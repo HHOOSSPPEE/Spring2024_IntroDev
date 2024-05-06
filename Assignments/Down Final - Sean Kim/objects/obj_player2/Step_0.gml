@@ -27,7 +27,7 @@ if (!place_meeting(new_x, y, obj_solid) && !place_meeting(new_x, y, obj_slow)) {
 
 var platform_side = instance_place(x + hsp, y, obj_moving_platform);
 if (platform_side != noone && !instance_place(x, y + 1, obj_moving_platform)) {
-    x += (platform_side.speed+2) * cos(degtorad(platform_side.direction)); 
+    x += (platform_side.speed+3) * cos(degtorad(platform_side.direction)); 
 }
 
 var new_y = y + vsp;
@@ -44,11 +44,11 @@ if (!place_meeting(x, new_y, obj_solid) && !place_meeting(x, new_y, obj_slow) &&
 
 var platform = instance_place(x, y + 1, obj_moving_platform); 
 if (platform != noone) { 
-    x += (platform.speed+2) * cos(degtorad(platform.direction)); 
+    x += (platform.speed+3) * cos(degtorad(platform.direction)); 
 }
 
 if (place_meeting(x, y, obj_trampoline)) {
-    vsp = -11; 
+    vsp = -14; 
 }
 
 if (place_meeting(x, y, obj_moving_platform)) {
