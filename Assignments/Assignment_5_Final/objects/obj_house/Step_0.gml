@@ -1,6 +1,7 @@
-if (place_meeting(x, y, obj_player) && mouse_check_button_pressed(mb_right))
+if (place_meeting(x, y, obj_player) && keyboard_check_pressed(vk_space))
 {
 	global.days++;
+	ifHouse = true;
 	
 	obj_keyboard.visible = false;
 	room_restart()

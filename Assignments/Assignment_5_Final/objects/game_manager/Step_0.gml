@@ -8,8 +8,12 @@ if (ifRun)
 	
 	if (timer_hour == 13)
 	{
-		isWhen = "PM";
 		timer_hour = 1;
+	}
+	
+	if (timer_hour == 12 && current_image == 1)
+	{
+		isWhen = "PM";
 	}
 	
 	if (timer_min > timer_min_max)
@@ -31,6 +35,7 @@ if (current_image == 4)
 	{
 		room_restart();
 		global.days++;
+		global.coins = global.coins - (global.coins*.2);
 	}
 }
 

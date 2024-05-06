@@ -24,5 +24,5 @@ draw_sprite_ext(spr_spacebar, 0, camX + 105, camY + 120, 1, 1, 0, c_white, 1);
 draw_text(camX + 123, camY + 130, "INTERACT");
 
 //goal
-draw_text(camX + 80, camY + 20, "SELL FOOD AND\nMAKE MONEY !!!");
+draw_text(camX + 80, camY + 20, "SELL FOOD AND\nMAKE MONEY\nTO GO HOME!!!");
 }

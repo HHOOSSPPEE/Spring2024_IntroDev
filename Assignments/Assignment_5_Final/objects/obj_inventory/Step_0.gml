@@ -17,12 +17,22 @@ if (obj_player.isSell)
 	if (selected_item != -1)
 	{
 		//use an item
-		if mouse_check_button_pressed(mb_left)
-		{
+		if (mouse_check_button_pressed(mb_left) && obj_player.farmer_jo && 
+				inventory[selected_item].category == "healthy")
+		{				
+			global.coins += inventory[selected_item].price;
+			array_delete(inventory, selected_item, 1);
+		}
+		else if (mouse_check_button_pressed(mb_left) && obj_player.farmer_world && 
+				inventory[selected_item].category == "sweet")
+		{				
+			global.coins += inventory[selected_item].price;
+			array_delete(inventory, selected_item, 1);
+		}
+		else if (mouse_check_button_pressed(mb_left) && obj_player.farmer_sam)
+		{				
 			global.coins += inventory[selected_item].price;
 			array_delete(inventory, selected_item, 1);
 		}
 	}
 }
-
-

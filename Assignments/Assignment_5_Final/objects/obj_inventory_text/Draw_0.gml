@@ -6,5 +6,5 @@ if (obj_player.inventory_open && instance_exists(obj_inventory_sell))
 {
 	draw_sprite(farmer_sprite, 0, obj_inventory_sell.x - 26, obj_inventory_sell.y - 24);
 	draw_text(obj_inventory_sell.x + 32, obj_inventory_sell.y + 2, farmer_name);
-	draw_text(obj_inventory_sell.x + 32, obj_inventory_sell.y + 14, farmer_sell);
+	draw_text(obj_inventory_sell.x + 32, obj_inventory_sell.y + 15, farmer_sell);
 }

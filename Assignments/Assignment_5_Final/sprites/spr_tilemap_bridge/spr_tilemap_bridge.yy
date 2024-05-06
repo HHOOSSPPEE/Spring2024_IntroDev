@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_tilemap_bridge",
-  "bbox_bottom": 44,
+  "bbox_bottom": 92,
   "bbox_left": 0,
   "bbox_right": 76,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 48,
+  "height": 100,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"9f970a3b-c51a-460e-b203-05290c9e7567","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
