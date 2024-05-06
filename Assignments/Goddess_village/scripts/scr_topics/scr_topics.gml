@@ -681,7 +681,7 @@ global.topics[$ "Back Home"] = [
 	SPEAKER("Brayd", spr_Brayd_pfp, PORTRAIT_SIDE.RIGHT),
 	TEXT("Welcome to my home!"),
 	TEXT("That room over there is vacant. You can stay there during your time in the village."),
-	TEXT("Oh, and one more thing—please remember not to go out at night."),
+	TEXT("Oh, and one more thing...please remember not to go out at night."),
 	TEXT("We have poultry in the yard, and it's easy to get hurt if you wander out in the dark."),
 	SPEAKER("You", spr_player_pfp, PORTRAIT_SIDE.LEFT),
 	TEXT("Okay, thank you, Brayd."),
