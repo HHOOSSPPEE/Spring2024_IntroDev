@@ -113,6 +113,7 @@ function set_background(_background) : dialogue_action() constructor{
     
     act = function(text_box){
         text_box.setBackground(background);
+		text_box.next();
     }
 }
 
@@ -131,6 +132,7 @@ function draw_item(_sprite, _x, _y) : dialogue_action() constructor{
     
     act = function(text_box){
         text_box.drawItem(sprite, pos_x, pos_y);
+		text_box.next();
     }
 }
 
@@ -145,5 +147,6 @@ function undraw_item(_sprite) : dialogue_action() constructor{
     
     act = function(text_box){
         text_box.removeItem(sprite);
+		text_box.next();
     }
 }

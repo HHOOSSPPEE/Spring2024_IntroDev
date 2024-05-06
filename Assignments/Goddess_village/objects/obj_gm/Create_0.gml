@@ -1,10 +1,2 @@
-enum GameState{
-	Explore,
-	Dialogue
-}
-
-gamestate = GameState.Dialogue;
-
-dialogue_num = 0;
-sprite_num = 0;
-
+audio_play_sound(snd_music, 10, true);
+start_dialogue("Bus");

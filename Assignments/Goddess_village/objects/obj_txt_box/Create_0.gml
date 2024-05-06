@@ -58,8 +58,8 @@ text_length = 0; //length of text
 
 //portrait sprite
 portrait_sprite = -1;
-portrait_width = sprite_get_width(spr_player);
-portrait_height = sprite_get_height(spr_player);
+portrait_width = sprite_get_width(spr_player_pfp);
+portrait_height = sprite_get_height(spr_player_pfp);
 
 //decide which side to put the protrait
 portrait_side = PORTRAIT_SIDE.LEFT;

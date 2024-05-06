@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":31.007334,
+  "duration":164.12732,
   "name":"snd_music",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_music.mp3",
+  "soundFile":"snd_music.MP3",
   "type":0,
   "volume":1.0,
 }

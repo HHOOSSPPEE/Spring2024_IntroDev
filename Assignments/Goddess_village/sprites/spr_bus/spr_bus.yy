@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"0cd331c2-1d02-4a93-a930-97d9f25895ae","name":"0cd331c2-1d02-4a93-a930-97d9f25895ae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a34d2996-aede-4e88-b556-0a6a7850d619","name":"a34d2996-aede-4e88-b556-0a6a7850d619","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":768,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"bd59f6ab-2569-4675-a4d2-7be05192df44","blendMode":0,"displayName":"default","isLocked":false,"name":"bd59f6ab-2569-4675-a4d2-7be05192df44","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"51331850-6113-4b67-8a72-a7a3bd9bf6c8","blendMode":0,"displayName":"default","isLocked":false,"name":"51331850-6113-4b67-8a72-a7a3bd9bf6c8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_bus",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"rm intro",
-    "path":"folders/Sprites/rm intro.yy",
+    "name":"forrest",
+    "path":"folders/Sprites/rm intro/forrest.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0cd331c2-1d02-4a93-a930-97d9f25895ae","path":"sprites/spr_bus/spr_bus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8ca30844-7230-4361-a11d-4cd7f36539a7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a34d2996-aede-4e88-b556-0a6a7850d619","path":"sprites/spr_bus/spr_bus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cc679d14-d7de-4390-9520-a43c54df67a1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
