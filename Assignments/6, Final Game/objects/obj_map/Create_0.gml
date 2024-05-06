@@ -1,0 +1,2 @@
+//set variables
+visible = false;
