@@ -19,6 +19,7 @@
   "ResourceOrderSettings": [
     {"name":"obj_ext3","order":18,"path":"objects/obj_ext3/obj_ext3.yy",},
     {"name":"spr_ent","order":8,"path":"sprites/spr_ent/spr_ent.yy",},
+    {"name":"obj_bgm","order":26,"path":"objects/obj_bgm/obj_bgm.yy",},
     {"name":"obj_slow","order":8,"path":"objects/obj_slow/obj_slow.yy",},
     {"name":"obj_introduction","order":25,"path":"objects/obj_introduction/obj_introduction.yy",},
     {"name":"obj_camera","order":4,"path":"objects/obj_camera/obj_camera.yy",},
@@ -33,6 +34,7 @@
     {"name":"obj_trampoline","order":6,"path":"objects/obj_trampoline/obj_trampoline.yy",},
     {"name":"spr_solid","order":2,"path":"sprites/spr_solid/spr_solid.yy",},
     {"name":"spr_ext","order":9,"path":"sprites/spr_ext/spr_ext.yy",},
+    {"name":"Sound2","order":1,"path":"sounds/Sound2/Sound2.yy",},
     {"name":"spr_player2","order":1,"path":"sprites/spr_player2/spr_player2.yy",},
     {"name":"spr_slow","order":5,"path":"sprites/spr_slow/spr_slow.yy",},
     {"name":"spr_trampoline","order":4,"path":"sprites/spr_trampoline/spr_trampoline.yy",},
@@ -46,6 +48,7 @@
     {"name":"spr_background","order":7,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"obj_player2","order":1,"path":"objects/obj_player2/obj_player2.yy",},
     {"name":"rm_intro","order":1,"path":"rooms/rm_intro/rm_intro.yy",},
+    {"name":"Sound3","order":2,"path":"sounds/Sound3/Sound3.yy",},
     {"name":"obj_ext22","order":23,"path":"objects/obj_ext22/obj_ext22.yy",},
     {"name":"obj_ext1","order":14,"path":"objects/obj_ext1/obj_ext1.yy",},
     {"name":"obj_ent1","order":13,"path":"objects/obj_ent1/obj_ent1.yy",},

@@ -12,6 +12,10 @@ if (key_left) {
     hsp = 0; 
 }
 
+if(keyboard_check_pressed(ord("W")) && isGrounded) {
+	audio_play_sound(Sound1, 1, false);
+}
+
 vsp += grav;
 
 if (isGrounded && key_jump) {

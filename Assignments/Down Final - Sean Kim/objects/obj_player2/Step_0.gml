@@ -13,6 +13,10 @@ if (key_left) {
     hsp = 0; 
 }
 
+if(keyboard_check_pressed(vk_up) && isGrounded) {
+	audio_play_sound(Sound2, 1, false);
+}
+
 vsp += grav;
 
 if (isGrounded && key_jump) {
