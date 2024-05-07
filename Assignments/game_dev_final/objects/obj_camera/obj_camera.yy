@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_camera",
+    "path": "sprites/spr_camera/spr_camera.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -1,6 +1,6 @@
 //gun will be attached to the player
-obj_gun3.x=x+sprite_width/2;
-obj_gun3.y=y+sprite_height/2;
+obj_gun3.x=x;
+obj_gun3.y=y-25;
 
 //cant see player through walls
 if (collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,true))

@@ -3,3 +3,7 @@ bullet_speed = 25;
 
 timer = 0;
 bullet_counter = 0;
+
+global.hasgun = false
+
+global.bullet_counter = bullet_counter;

@@ -1,6 +1,6 @@
-//gun will be attached to the player
-obj_gun1.x=x+sprite_width/2;
-obj_gun1.y=y+sprite_height/2;
+//gun will be attached to the enemy
+obj_gun1.x=x;
+obj_gun1.y=y-25;
 
 //enenmy can not see the player through walls
 if (collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,true))
@@ -26,4 +26,16 @@ if place_meeting(x,y,obj_bullet)
 	global.counter += 1;
 	instance_destroy(obj_gun1);
 	instance_destroy();
+}
+
+//turns out if it sees player
+if global.turn = true
+{
+	image_index = spr_enemy1;
+	image_xscale = -1;
+}
+else
+{
+	image_index = spr_enemy1;
+	image_xscale = 1;
 }

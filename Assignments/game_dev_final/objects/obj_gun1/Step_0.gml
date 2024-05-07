@@ -23,4 +23,10 @@ if (obj_enemy1.should_shoot = true)
 	}
 }
 
+if image_angle < -100
+{
+	global.turn = true;
+	
+}
+
 timer = timer -1

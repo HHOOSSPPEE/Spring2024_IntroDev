@@ -1,4 +1,2 @@
-if (global.counter = 1)
-{
-	global.cleared = true;
-}
+//show_debug_message(global.counter)
+
