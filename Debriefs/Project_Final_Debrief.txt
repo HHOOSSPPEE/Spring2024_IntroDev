@@ -19,3 +19,6 @@ I think the scope of my game is very big for the case of a final. Procedural gen
 **Overall** - Pass
 
 I think my game definitely passes as it meets all of the provided requirements.
+
+Final Additional:
+- The feedback that I will incorporate is substitute the enemy design with something more definitely "evil" such as zombies, beasts, or other monsters that are more acceptable and less disturbing to players when they have their corpse piled up together in game, a design that I really liked however a little problematic considering the fact that it's people in the current design.
