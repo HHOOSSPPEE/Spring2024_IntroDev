@@ -1,1 +1,2 @@
-text_id = "npc 1";
+text_id = "2";
+npc_id = 2;

@@ -1,0 +1,1 @@
+prevMoney = global.money;
