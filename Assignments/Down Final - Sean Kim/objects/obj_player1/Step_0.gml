@@ -1,6 +1,9 @@
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(ord("W"));
+if(!global.pause) { 
+	key_left = keyboard_check(ord("A"));
+	key_right = keyboard_check(ord("D"));
+	key_jump = keyboard_check_pressed(ord("W"));
+
+}
 
 var inContactWithSlow = place_meeting(x, y + 1, obj_slow);
 
@@ -81,5 +84,10 @@ if(place_meeting(x, y, obj_ent2)) {
 if(place_meeting(x, y, obj_ent3)) { 
 	x = obj_ext3.x;
 	y = obj_ext3.y
+}
+
+if(place_meeting(x, y, obj_entd)) { 
+	x = obj_extd.x;
+	y = obj_extd.y
 }
 

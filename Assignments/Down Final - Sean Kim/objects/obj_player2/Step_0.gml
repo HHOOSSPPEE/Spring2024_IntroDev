@@ -1,7 +1,8 @@
-// Player input
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(vk_up);
+if(!global.pause) {
+	key_left = keyboard_check(vk_left);
+	key_right = keyboard_check(vk_right);
+	key_jump = keyboard_check_pressed(vk_up);
+}
 
 var inContactWithSlow = place_meeting(x, y + 1, obj_slow);
 
@@ -83,4 +84,9 @@ if(place_meeting(x, y, obj_ent22)) {
 if(place_meeting(x, y, obj_ent33)) { 
 	x = obj_ext33.x;
 	y = obj_ext33.y
+}
+
+if(place_meeting(x, y, obj_entdd)) { 
+	x = obj_extdd.x;
+	y = obj_extdd.y
 }

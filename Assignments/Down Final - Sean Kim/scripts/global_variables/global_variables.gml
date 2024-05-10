@@ -7,3 +7,4 @@ global.jumps1 = 0;
 
 global.jumps2 = 0;
 
+global.pause = false;
