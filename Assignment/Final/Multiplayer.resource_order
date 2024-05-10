@@ -1,0 +1,18 @@
+{
+  "FolderOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"obj_grass_manager","order":13,"path":"objects/obj_grass_manager/obj_grass_manager.yy",},
+    {"name":"obj_player1","order":9,"path":"objects/obj_player1/obj_player1.yy",},
+    {"name":"UI_manager","order":6,"path":"objects/UI_manager/UI_manager.yy",},
+    {"name":"obj_target","order":8,"path":"objects/obj_target/obj_target.yy",},
+    {"name":"obj_ground","order":3,"path":"objects/obj_ground/obj_ground.yy",},
+    {"name":"obj_camera","order":7,"path":"objects/obj_camera/obj_camera.yy",},
+    {"name":"obj_arrow","order":10,"path":"objects/obj_arrow/obj_arrow.yy",},
+    {"name":"par_preys","order":2,"path":"objects/par_preys/par_preys.yy",},
+    {"name":"obj_prey_manager","order":12,"path":"objects/obj_prey_manager/obj_prey_manager.yy",},
+    {"name":"obj_player2","order":5,"path":"objects/obj_player2/obj_player2.yy",},
+    {"name":"obj_kirby","order":4,"path":"objects/obj_kirby/obj_kirby.yy",},
+    {"name":"par_players","order":1,"path":"objects/par_players/par_players.yy",},
+    {"name":"obj_deadzone","order":11,"path":"objects/obj_deadzone/obj_deadzone.yy",},
+  ],
+}
