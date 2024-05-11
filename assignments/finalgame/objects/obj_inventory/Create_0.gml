@@ -17,11 +17,22 @@ global.item_list =
     {
 
 
+    key : new create_item(
+        "Key",
+        "Insert descrpt",
+        spr_key,
+
+        function ()
+        {
+            array_delete(inv, selected_item, 1);
+        }
+
+        ),
+
     milk : new create_item(
         "Milk",
-        "stolen from a cow",
+        "Insert descrpt",
         spr_milk,
-
         function ()
         {
             array_delete(inv, selected_item, 1);
@@ -29,48 +40,15 @@ global.item_list =
 
         ),
 
-    egg : new create_item(
-        "Egg",
-        "stolen from a chicken",
-        spr_egg,
+    ring : new create_item(
+        "Ring",
+        "Insert descrpt",
+        spr_ring,
         function ()
         {
             array_delete(inv, selected_item, 1);
         }
-
-        ),
-
-    berry : new create_item(
-        "Berry",
-        "plucked from wild bushes",
-        spr_berry,
-        function ()
-        {
-            array_delete(inv, selected_item, 1);
-        }
-        ),
-
-    apple : new create_item(
-        "Apple",
-        "the apple that fell on Newton's head ",
-        spr_apple,
-        function ()
-        {
-            array_delete(inv, selected_item, 1);
-        }
-
-        ),
-
-    wheat : new create_item(
-        "Wheat",
-        "a stick used to make bread",
-        spr_wheat,
-        function ()
-        {
-            array_delete(inv, selected_item, 1);
-        }
-
-        ),
+        )
 
     }
 
