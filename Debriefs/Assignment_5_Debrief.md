@@ -1,6 +1,6 @@
 ### **2024 Spring** - Angelina Xi
 ### *Assignment 5* - Final
-Link to game: (itch link)
+Link to game: https://angelinaxi.itch.io/final-game
 
 
 ## **Debrief**
