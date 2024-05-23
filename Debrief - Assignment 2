@@ -1,1 +1,43 @@
-debrief - assignment 2
+### **2024 Spring** - Britney Ouyang
+### *Assignment 2* - Narrative Game
+Link to game: https://nanami03.itch.io/narrative
+
+
+## **Debrief**
+In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
+
+- What did you end up making?
+- Which of the game’s aspects did you like about this project?
+- What resources and/or comments were most helpful to you?
+- What will you repeat or do differently next time?
+
+Please do not answer these questions individually, but include it in a paragraph format.
+
+In this project, I created an interactive game where the player navigates a small map, interacts with NPCs, and completes small tasks to progress. The game starts with the player moving around a small map with a locked room. As the player approaches the door, a message indicates it is locked. Using the mouse to left-click on NPCs, the purple slime informs the player that they need to find a key (located at the bottom-right corner of the map) and a sword to enter the room. The pink slime tells the player she lost her star, and when the player finds the star and returns it to her, she shows appreciation.
+
+The game’s design involves using the sword to kill a ghost blocking the door, allowing the player to enter the room with the key. Upon entering, the player discovers it is the home of the ghosts. Exiting the room causes time to rewind, bringing the player back to the moment that all begins.
+
+A challenge I encountered was fixing a text box to the top right corner when the camera moved to follow the player. Initially, the text box remained static, not moving with the camera. When I adjusted the code to move the text box with the camera, it still did not appear in the desired spot. I resolved this by changing its position through code and adjusting the placement of the object in the room. However, since this solution only works in one room but not the others, next time I will try to find out a better method if I want to use text boxes in several rooms for my game.
+
+I enjoyed the process of designing the game’s narrative and mechanics. I especially loved choosing the sounds for interactions with game elements and drawing the ghosts and slimes as NPCs. I may try to add a background and some more aesthetic elements for my game in future developments. Also, I may add a starter menu to show the basic rules in the game instead of out of the game, with some basic interactive elements for players to click.
+
+The most helpful resources were online tutorials on game development and feedback from playtesters/classmates. These resources helped me with coding and refining the game mechanics and narrative. I look forward to applying these new thoughts to future projects, aiming to create more engaging and innovative games.
+
+## **Self Evaluation**
+In addition to the debrief, the Self Evaluation is an opportunity for you to talk about your work. You must rate each aspect of your project as a 1 - 5 or Pass/Fail (where appropriate), as well as write a short 1-2 sentence elaboration to justify your score, in the following areas:
+
+
+**Execution** (Did your project meet the theme you gave it?) - 5
+
+The theme was home and the narrative part matches the theme.
+
+
+**Scope** (How well do you feel you scoped your game?) - 4
+
+
+The scope is fine with current game but could be expanded.
+
+
+**Overall** - Pass
+
+The requirements are met.
