@@ -1,0 +1,42 @@
+### **2024 Spring** - Britney Ouyang
+### *Assignment 3* - Multiplayer Game
+Link to game: https://nanami03.itch.io/multiplayer-game
+
+
+## **Debrief**
+In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
+
+- What did you end up making?
+- Which of the game’s aspects did you like about this project?
+- What resources and/or comments were most helpful to you?
+- What will you repeat or do differently next time?
+
+Please do not answer these questions individually, but include it in a paragraph format.
+
+I made a game designed for two players, each equipped with a pickaxe to mine various ores distributed across the map, including bronze, silver, and gold. Each type of ore carries a different point value—bronze ores are worth one point, silver ores three points, and gold ores five points. The ultimate goal is for players to strategically mine all available ores, with the winner being the one who accumulates the highest score by the end of the game.
+
+One of the standout features of the game is its ore classification mechanism. I have deliberately created three distinct types of ores, each with varying point values. This design choice is intended to encourage players to strategize and choose the most beneficial mining paths, thereby enhancing overall gameplay and player engagement. By incorporating this variety of ores, the game becomes more challenging, as players must constantly adapt their strategies to maximize their score.
+
+However, there are still a bug to fix: when a player mines more than one ore at the exact same time, the points are unfortunately only counted once rather than being properly multiplied. This issue is unfair for players who strategically mine multiple ores at intersections or corners of the map. It is crucial that this bug be addressed promptly to ensure that the game remains fair and balanced for all players.
+
+The game fits well with the mining theme. I borrowed some elements from the classic Pac-Man, while implementing its own unique mechanics that enrich the player's experience. Although the current version of the game is satisfactory as a foundational effort, I may add some more elements in the future. For example, when the two players meet, they could choose to start a battle and use their current points to bet and the winner takes all. There could also be some ore with special abilities for players to use.
+
+To develop the game's playability, I am considering introducing additional gameplay elements. For instance, I may incorporate interactive props such as a 'trap' which would temporarily immobilize players for three seconds, or a 'booster' which would increase a player’s speed for a brief period. Moreover, adding monsters that can chase, capture, and reset players' positions - akin to the dynamics seen in classic games like Pac-Man - could significantly enhance the fun and competitive nature of the game. These elements are designed not only to complicate the mining strategy but also to introduce unexpected twists and turns that keep the game exciting.
+
+## **Self Evaluation**
+In addition to the debrief, the Self Evaluation is an opportunity for you to talk about your work. You must rate each aspect of your project as a 1 - 5 or Pass/Fail (where appropriate), as well as write a short 1-2 sentence elaboration to justify your score, in the following areas:
+
+
+**Execution** (Did your project meet the theme you gave it?) - 5
+
+The theme was mine and the mechanism matches the theme.
+
+
+**Scope** (How well do you feel you scoped your game?) - 4
+
+The scope is fine with current game but could be expanded.
+
+
+**Overall** - Pass
+
+The requirements of the multiplayer game are met.
