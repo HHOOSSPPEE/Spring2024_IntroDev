@@ -1,0 +1,32 @@
+### **2024 Spring** - Celine Z
+### *Assignment 1* - Clone Game
+Link to game: (itch link)
+
+
+## **Debrief**
+In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
+
+During this project, I felt like my project was incomplete in a way, where I ran into a lot of issues and bugs due to my limited ability in coding. I felt like I knew the basics and knew what I wanted to do, and the concepts behind it, but I had trouble executing it in code, where it would correctly run or run the way that I wanted to, even when I tried exploring online forums and resources to help. For example, I had a section of code that ran perfectly well, till I tried implementing an animation for the sprite, sprite_index = spr_float, but suddenly my sprite refused to run the code and I was stumped for a while. Then I ran into issues with the room mechanic, as there is a room in Kirby’s Dreamland where you spawn into this door, but also use this door to go to the next room, but mine would get stuck in the second room. I was thinking of adding a timer to fix this issue, but I was unsuccessful and got stuck again. I also wasn’t able to implement the specific enemy movement that I wanted to, even though the timer mechanic worked, I couldn’t make it look more natural in the game feel. I also had trouble adding an inventory system, but I know that I’ve always had struggles with the inventory system, even in the past projects. I’m not exactly happy with my clone, and I think I should go to the code help desk and or email the TA to help with my overall code, or do some further research into youtube videos and tutorials on these issues that I’m getting stuck on. 
+
+
+Please do not answer these questions individually, but include it in a paragraph format.
+
+## **Self Evaluation**
+In addition to the debrief, the Self Evaluation is an opportunity for you to talk about your work. You must rate each aspect of your project as a 1 - 5 or Pass/Fail (where appropriate), as well as write a short 1-2 sentence elaboration to justify your score, in the following areas:
+
+
+**Execution** (Did your project meet the theme you gave it?) - 5
+
+*Write your elaboration within the asterixis*
+
+
+**Scope** (How well do you feel you scoped your game?) - 5
+
+
+*Write your elaboration within the asterixis*
+
+
+**Overall** - Pass/Fail
+
+
+*Write your elaboration within the asterixis*

@@ -1,0 +1,1 @@
+global.exp = 0;
