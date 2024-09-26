@@ -1,0 +1,24 @@
+### **2024 Spring** - Yunhang Q
+### *Assignment 3* - Inventory Game - Theme Serve
+
+## **Debrief**
+In at least 400 words, write a debrief. You must write a reflection on your assignment. In addition to specific requirements stated for the assignment, you must answer the following:
+
+In the process of creating a game featuring an inventory while sticking to the theme serve, I ended up creating a meal prepping game that challenges the player’s reaction. The main mechanic of the game is the fast-moving material lists that the player has to be quick to catch. The materials rolling are of course randomly generated so there are no patterns to catch. If they do catch it and add it to the inventory, they could then click it from the inventory list on the left to use it, that would remove one of the items on the list signaling the player has completed it. However, the inventory has a max size of 5 and you can not remove items once you have added it in there, so the game comes to a stop once you have 3 wrong materials in inventory (every dish requires 3 materials to make).
+However, I originally had a more complicated idea in mind. I was planning on creating an authentic food prepping game that has complicated dishes and potentially movements for the player to do, but the inventory system was very complicated. After getting the script for inventory in place, I began theorizing my approach to having the material-dish system work, and quickly realized that my original idea was far beyond the scope of this assignment and would have been way too difficult, however the rolling of the materials inspired me and I shifted to making a reaction game which worked quite well.
+Getting the original scripts for the inventory was quite difficult and I had to scramble through some tutorials, the game maker official tutorials were very helpful with this as their script worked quite well and provided a solid basis for me to modify it for my use. However, that was only barebone for some functions that would allow for the implementation of what’s basically an array that keeps track of items, actually having it on screen for the player to interact with was much more complicated than that. One of the major obstacles that stuck me for a long time was having objects in the inventory screen to work nicely. Essentially I wanted the items displayed to naturally “move up” and fill the gap when the item above is used and thus destroyed. I tried various ideas but I ended up having 5 fixed positions, and generating a random number as a unique identifier upon creation of the object specifically for displaying in the inventory; that object would place themselves into 5 fixed y positions based on their index in the inventory. On paper it should work perfectly which it did, but only sometimes, other times it would randomly scramble together and I have no idea why. I could not figure out why but since it works about 75% of the time, I decided to leave it as it is.
+
+
+## **Self Evaluation**
+**Execution** (Did your project meet the theme you gave it?) - 4
+I think my game sticks to the theme nicely as the player is trying to complete dishes which would be serving other people. There’s also a tracker that is keeping track of the number of dishes the player has completed.
+
+**Scope** (How well do you feel you scoped your game?) - 5
+
+I think the scope of my game is pretty appropriate given the complexity of the system I am trying to craft here. You can play the game infinitely with a progress tracker.
+
+**Overall** - Pass
+
+I think my game definitely passes as it meets all of the provided requirements.
+
+
