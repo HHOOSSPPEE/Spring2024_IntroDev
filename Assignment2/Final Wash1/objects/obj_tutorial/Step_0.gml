@@ -1,0 +1,1 @@
+if(global.show &&mouse_check_button(mb_left)) visible=true;
