@@ -1,0 +1,1 @@
+global.pearl_count = 0;

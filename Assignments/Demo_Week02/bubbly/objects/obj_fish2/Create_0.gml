@@ -1,0 +1,2 @@
+fish2_text = "The temple near here is thousands of years old." + "\n" + "You don't know the prophecy?" + "\n" + "It is written on the tablet next to the temple." + "\n" + "Go see for yourself.";
+// the temple near here is thousands of years old. You don't know the prophecy? It is written on the tablet next to the temple.
