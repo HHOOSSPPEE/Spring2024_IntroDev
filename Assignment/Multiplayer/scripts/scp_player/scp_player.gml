@@ -146,7 +146,7 @@
 	
 	// detect preys
 	function DetectPreys(preysInScreenL,preysInScreenR){
-		with (par_preys){
+		with (obj_kirby){
 			// check if enemies within screen
 			if (x > obj_camera.x-obj_camera.camWidth/2 && x < obj_camera.x+obj_camera.camWidth/2
 			&& y > obj_camera.y-obj_camera.camHeight/2 && y < obj_camera.y+obj_camera.camHeight/2){
@@ -189,6 +189,34 @@
 		}
 		return closest;
 	}
+	// check which prey closest
+	//function ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR){
+	//	var lastKeyPressed = (lastKeyPressTimeL>lastKeyPressTimeR) ? -1 : 1;// -1 if last key is left, 1 if right
+	//	// randomly shoot if no prey detected
+	//	var closest = random_range(300,obj_camera.camWidth/2-200)*lastKeyPressed;
+	//	var front = lastKeyPressed>0 ? preysInScreenR : preysInScreenL;
+	//	var back = lastKeyPressed>0 ? preysInScreenL : preysInScreenR;
+	//	if (array_length(front)!=0){
+	//		closest = front[0].x-x;
+	//		for (i=1;i<array_length(front);i++){
+	//			// if left key pressed, check preys on the left, and vice versa
+	//			if (abs(front[i].x-x)<abs(closest)){
+	//				closest = front[i].x-x;
+	//			}
+	//		}
+	//	}
+	//	else if (array_length(front)==0 && array_length(back)!=0){
+	//		closest = back[0].x-x;
+	//		for (i=1;i<array_length(back);i++){
+	//			// if left key pressed, check preys on the left, and vice versa
+	//			if (abs(back[i].x-x)<abs(closest)){
+	//				closest = back[i].x-x;
+	//			}
+	//		}
+	//	}
+	//	return closest;
+	//}
+	
 
 		
 #endregion

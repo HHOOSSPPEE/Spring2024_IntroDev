@@ -76,20 +76,42 @@
 #endregion
 
 #region functions for player 1 (dog)
-	// switch to dragging state
-	function Dragging(keyDown,state){
-		if (keyDown){
-			state = Player1State.drag;
+
+	// detect preys
+	function DetectPreys1(preysInScreenL,preysInScreenR){
+		with (obj_kirby){
+		// check if enemies within screen
+			if (self.x-other.x<=0){
+				preysInScreenL[array_length(preysInScreenL)] = self;
+			}
+			else{
+				preysInScreenR[array_length(preysInScreenR)] = self;
+			}
 		}
-		return state
+		return [preysInScreenL,preysInScreenR];
 	}
 	
-	// switch to sniffing state
-	function Sniffing(keyUp,state){
-		if (keyUp){
-			state = Player1State.sniff;
+	// check which prey closest
+	function ClosestPrey1(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR){
+		var lastKeyPressed = (lastKeyPressTimeL>lastKeyPressTimeR) ? -1 : 1;// -1 if last key is left, 1 if right
+		// randomly shoot if no prey detected
+		var closest = 0
+		var front = lastKeyPressed>0 ? preysInScreenR : preysInScreenL;
+		var back = lastKeyPressed>0 ? preysInScreenL : preysInScreenR;
+		if (array_length(front)!=0){
+			closest = front[0].x-x;
+			for (i=1;i<array_length(front);i++){
+				// if left key pressed, check preys on the left, and vice versa
+				if (abs(front[i].x-x)<abs(closest)){
+					closest = front[i].x-x;
+				}
+			}
 		}
-		return state
+		else{
+			closest = obj_player2.x + 800 * lastKeyPressed - x; // just walk ahead
+			}
+		show_debug_message("closest: "+ string(closest))
+		return closest;
 	}
 	
 	// detect preys from large distance
@@ -119,13 +141,6 @@
 #endregion
 
 #region functions for player 2 (hunter)
-	// switch to hiding state
-	function Hiding(keyDown,state){
-		if (keyDown){
-			state = Player2State.hide;
-		}
-		return state
-	}
 	
 	// switch to shooting state
 	function Shooting(keyUp,state){
@@ -146,7 +161,7 @@
 	
 	// detect preys
 	function DetectPreys(preysInScreenL,preysInScreenR){
-		with (par_preys){
+		with (obj_kirby){
 			// check if enemies within screen
 			if (x > obj_camera.x-obj_camera.camWidth/2 && x < obj_camera.x+obj_camera.camWidth/2
 			&& y > obj_camera.y-obj_camera.camHeight/2 && y < obj_camera.y+obj_camera.camHeight/2){

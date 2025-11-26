@@ -1,91 +1,90 @@
 // inputs
 var keyRight = keyboard_check(ord("D"));
 var keyLeft = keyboard_check(ord("A"));
-var keyUp = keyboard_check(ord("W"));
 var keyDown = keyboard_check(ord("S"));
 
 // enable camera smoothing after player move
-if (keyRight||keyLeft||keyUp||keyDown){
+if (keyRight||keyLeft||keyDown){
 	obj_camera.enableSmoothing=true;
 }
 
 // state machine
 switch (state){
-	// dash state
-	case Player1State.dash:
-		acc = dashAcc;
-		maxV = dashMaxV;
-		// spend dash energy during dashing state
-		var newDashInfo = DashCountdown(dashEnergy,tired,doubleClickedA,doubleClickedD);
-		tired = newDashInfo[0];
-		doubleClickedA = newDashInfo[1];
-		doubleClickedD = newDashInfo[2];
-		dashEnergy = newDashInfo[3];
-		break;
-	
-	// walk state
-	case Player1State.walk:
-		acc = walkAcc;
-		maxV = walkMaxV;
-		// recover dash energy during walking state
-		var newDashInfo = DashRecovery(dashEnergy,tired);
-		dashEnergy = newDashInfo[0];
-		tired = newDashInfo[1];
-		break;
-	
-	// drag state
-	case Player1State.drag:
-		acc = slowAcc;
-		maxV = slowMaxV;
-		// drag prey to slow them down
-		preyContacted = instance_place(x,y,par_preys);
-		if (preyContacted){
-			preyContacted.state = KirbyState.dragged;
-			xSpeed = preyContacted.xSpeed*preyContacted.dir;
-			if (keyboard_check_released(ord("S"))){// when released, let prey go
-				preyContacted.state = KirbyState.run;
-				preyContacted = noone;
-			}
+	// left state
+	case Player1State.left:
+		preysInScreenL = DetectPreys1(preysInScreenL,preysInScreenR)[0];
+		preysInScreenR = DetectPreys1(preysInScreenL,preysInScreenR)[1];
+		closest = ClosestPrey1(preysInScreenL,preysInScreenR,1,0);
+		if (closest < -150 ){
+			acc = dashAcc;
+			maxV = dashMaxV;
+			dir = -1
 		}
+		else if (closest >= -150 && closest < -100){
+			acc = 0;
+			maxV = 0;
+		}
+		else if (closest >= -100 && closest <0){
+			acc = dashAcc;
+			maxV = dashMaxV;
+			dir = 1 
+		}
+		else{
+			acc = 0;
+			maxV = 0;
+		}
+		preysInScreenL = [];
+		preysInScreenR = [];
 		break;
-	// sniff state
-	case Player1State.sniff:
-		acc = slowAcc;
-		maxV = slowMaxV;
-		preyLeft = PreysTracking()[0];
-		preyRight = PreysTracking()[1];
-		break;
-}
-
-// check if double-clicked
-var resultD = DoubleClick(ord("D"), lastKeyPressTimeD, doubleClickThreshold,doubleClickedD,tired);
-doubleClickedD = resultD[0];
-lastKeyPressTimeD = resultD[1];// record last time player pressed d for next check
-var resultA = DoubleClick(ord("A"), lastKeyPressTimeA, doubleClickThreshold,doubleClickedA,tired);
-doubleClickedA = resultA[0];
-lastKeyPressTimeA = resultA[1];// record last time player pressed a for next check
 	
+	// right state
+	case Player1State.right:
+		preysInScreenL = DetectPreys1(preysInScreenL,preysInScreenR)[0];
+		preysInScreenR = DetectPreys1(preysInScreenL,preysInScreenR)[1];
+		closest = ClosestPrey1(preysInScreenL,preysInScreenR,0,1);
+		if (closest > 150 ){
+			acc = dashAcc;
+			maxV = dashMaxV;
+			dir = 1
+		}
+		else if (closest <= 150 && closest > 100){
+			acc = 0;
+			maxV = 0;
+		}
+		else if (closest <= 100 && closest > 0){
+			acc = dashAcc;
+			maxV = dashMaxV;
+			dir = -1 
+		}
+		else{
+			acc = 0;
+			maxV = 0;
+		}
+		preysInScreenL = [];
+		preysInScreenR = [];
+		break;
+	
+	// stay state
+	case Player1State.stay:
+		acc = 0;
+		maxV = 0;
+		break;
+}
 // change state
-state = SpeedChange(state,doubleClickedA,doubleClickedD,tired,dashEnergy,Player1State.dash,Player1State.walk);
-state = Sniffing(keyUp,state);
-state = Dragging(keyDown,state);
-if (state == Player1State.drag){
-	alertDistance = hideAlert;
-}
-else{
-	alertDistance = normalAlert;
-}
+if (keyLeft){state = Player1State.left;}
+if (keyRight){state = Player1State.right;}
+if (keyDown){state = Player1State.stay;}
 
 // horizontal movement
-if ((keyRight - keyLeft)!=0){// accelerate
-	xSpeed += (keyRight - keyLeft) * acc;
+if (acc!=0){// accelerate
+	xSpeed += dir * acc;
 	if (abs(xSpeed) > maxV ){// limit max spped
 		xSpeed = sign(xSpeed)*maxV;
 	}
 }
 else{// decelerate
-	xSpeed -= sign(xSpeed)*acc/2
-	if ((abs(xSpeed))<(acc/2)){
+	xSpeed -= sign(xSpeed)*dashAcc/2
+	if ((abs(xSpeed))<(dashAcc/2)){
 		xSpeed = 0;
 	}
 }

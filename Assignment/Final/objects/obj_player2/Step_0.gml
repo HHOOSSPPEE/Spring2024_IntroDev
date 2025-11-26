@@ -9,6 +9,9 @@ if (keyRight||keyLeft||keyUp||keyDown){
 }
 
 // state machine
+show_debug_message(state);
+show_debug_message("canShoot: "+ string(canShoot));
+show_debug_message("shootNow: "+ string(shootNow));
 switch (state){
 	// dash state
 	case Player2State.dash:
@@ -31,36 +34,32 @@ switch (state){
 		dashEnergy = newDashInfo[0];
 		tired = newDashInfo[1];
 		break;
-	
-	// hide state
-	case Player2State.hide:
-		acc = slowAcc;
-		maxV = slowMaxV;
-		break;
-	
+		
 	// shoot state
 	case Player2State.shoot:
 		acc = slowAcc;
 		maxV = slowMaxV;
-		var detectPreys = DetectPreys(preysInScreenL,preysInScreenR);
-		preysInScreenL = detectPreys[0];
-		preysInScreenR = detectPreys[1];
-		preysInScreen = array_concat(preysInScreenL,preysInScreenR)
-		// shooting make preys alert
-		if (shootNow){
-			alarm[0] = game_get_speed(gamespeed_fps);
-			var closest = ClosestPrey(preysInScreenL,preysInScreenR,lastKeyPressTimeL,lastKeyPressTimeR);
-			CreateArrow(x+sprite_width/2,y-sprite_height/2,closest);
-			canShoot = false;
-			shootingAnimation = false;
-			shootNow=false;
+		if (keyUp){
+			holdTime++
+			shootingHold = true;
 		}
-		// hold to shoot
-		if (keyboard_check_released(vk_up)){// no continous shooting
+		if (holdTime>holdTimeThreshold){// enable shooting after holding enough time
 			canShoot = true;
 		}
-		preysInScreenL =[];// empty the prey array
-		preysInScreenR =[];
+		if (keyboard_check_released(vk_up)) {
+			holdTimeTemp = holdTime;
+			holdTime = 0;
+		    shootingHold = false;
+			shootQueued = true;
+		}	
+		// shoot when release
+		if (shootNow) {
+			var distance = (min(holdTimeTemp*10,1200)-holdTimeThreshold*10+100)*image_xscale
+		    CreateArrow(x+sprite_width/2,y-sprite_height/2,distance);
+			holdTimeTemp = 0;
+			canShoot = false;
+			shootNow = false;	
+		} 
 		break;	
 }
 
@@ -74,13 +73,11 @@ lastKeyPressTimeL = resultL[1];// record last time player pressed a for next che
 	
 // change state
 state = SpeedChange(state,doubleClickedL,doubleClickedR,tired,dashEnergy,Player2State.dash,Player2State.walk);
-state = Hiding(keyDown,state);
-state = Shooting(keyUp,state);
-if (state == Player2State.hide){
-	alertDistance = hideAlert;
-}
-else{
-	alertDistance = normalAlert;
+if (shootQueued){
+	state = Player2State.shoot;
+} 
+else {
+    state = Shooting(keyUp, state);
 }
 
 // horizontal movement
@@ -96,6 +93,8 @@ else{// decelerate
 		xSpeed = 0;
 	}
 }
+// hungry control
+hungry ++;
 
 // vertical movement
 ySpeed += grv;

@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_dog_idle",
-    "path": "sprites/spr_dog_idle/spr_dog_idle.yy",
+    "name": "spr_robot",
+    "path": "sprites/spr_robot/spr_robot.yy",
   },
   "spriteMaskId": null,
   "visible": true,

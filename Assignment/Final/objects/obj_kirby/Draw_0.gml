@@ -1,4 +1,4 @@
-if (state = KirbyState.stop){
+if (state == KirbyState.stop){
 	sprite_index = spr_prey_idle;
 }
 else{
@@ -11,7 +11,7 @@ else{
 		sprite_index = spr_prey_walk;
 	}
 }
-if (state = KirbyState.run){
+if (state == KirbyState.run){
 	image_speed = 2;
 }
 else{

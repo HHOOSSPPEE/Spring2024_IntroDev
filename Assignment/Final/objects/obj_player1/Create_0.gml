@@ -1,22 +1,13 @@
-// dash mode
-doubleClickedD = false;// checked if player double clicked
-doubleClickedA = false;
-lastKeyPressTimeD = -1;// record time key pressed
-lastKeyPressTimeA = -1;
-doubleClickThreshold = 0.5;// if key pressed within threshold, dash
-dashEnergy = 180;// enable dashing for 3s
-tired = false;
-
+preysInScreenL = [];
+preysInScreenR = [];
 // horizontal movement
 xSpeed = 0;
 acc = 0.24;
 maxV = 2.4;
-walkAcc= 0.24;// walk state acceleration
-walkMaxV= 2.4;
-dashAcc= 0.48;// dash state acceleration
-dashMaxV= 4.8;
-slowAcc= 0.12;// hide state acceleration
-slowMaxV= 1.2;
+dashAcc= 0.36;// dash state acceleration
+dashMaxV= 3.6;
+dir = 1
+
 
 // vertical movement
 ySpeed = 0;
@@ -26,22 +17,8 @@ isGrounded = 6;
 
 // state
 enum Player1State{
-	walk, 
-	dash, 
-	drag,
-	sniff,
+	left,
+	right,
+	stay,
 }
-state = Player1State.walk;
-
-// sniffing
-preyLeft = false;
-preyRight = false;
-sniffingTime = 0;
-
-// dragging
-preyContacted = noone;
-
-// alert signal
-alertDistance = 0;
-normalAlert = 400;
-hideAlert = 200;
+state = Player1State.stay;

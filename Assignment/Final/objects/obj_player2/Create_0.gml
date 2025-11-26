@@ -6,17 +6,19 @@ lastKeyPressTimeL = -1;
 doubleClickThreshold = 0.5;// if key pressed within threshold, dash
 dashEnergy = 180;// enable dashing for 3s
 tired = false;
+hungry = 0;
+hungryThreshold =7200;
 
 // horizontal movement
 xSpeed = 0;
-acc = 0.18;
-maxV = 1.8;
-walkAcc= 0.18;// walk state acceleration
-walkMaxV= 1.8;
-dashAcc= 0.3;// dash state acceleration
-dashMaxV= 3;
-slowAcc= 0.12;// hide state acceleration
-slowMaxV= 1.2;
+acc = 0.25;
+maxV = 2.5;
+walkAcc= 0.25;// walk state acceleration
+walkMaxV= 2.5;
+dashAcc= 0.4;// dash state acceleration
+dashMaxV= 4;
+slowAcc= 0.18;// hide state acceleration
+slowMaxV= 1.8;
 
 // vertical movement
 ySpeed = 0;
@@ -27,20 +29,19 @@ isGrounded = 6;
 enum Player2State{
 	walk, 
 	dash, 
-	hide,
 	shoot,
 }
 state = Player2State.walk;
 
 // shooting
 shootNow = false;
-shootingAnimation = false;
+shootQueued = false;
+shootingHold = false;
 canShoot = true;
-preysInScreen = []
-preysInScreenL = [];
-preysInScreenR = []
+holdTime = 0;
+holdTimeTemp = 0
+holdTimeThreshold = 30
+
 
 // alert signal
-alertDistance = 0;
-normalAlert = 400;
-hideAlert = 200;
+alertDistance = 400;

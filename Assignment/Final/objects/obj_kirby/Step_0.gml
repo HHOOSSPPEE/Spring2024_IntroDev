@@ -11,7 +11,6 @@ switch (state){
 	case KirbyState.stop:
 		xSpeed = 0;
 		if (stopTimer++>maxStopTime){
-			randomize();
 			stopTimer = 0;
 			maxStopTime = irandom_range(60,160);
 			dir = irandom(1)==1 ? 1 : -1;
@@ -19,14 +18,21 @@ switch (state){
 			state=KirbyState.walk;
 		}
 		break;
-	// stop state
+	// run state
 	case KirbyState.run:
 		xSpeed = xSpeedRun;
 		break;
-	case KirbyState.dragged:
-		// if being dragged, slow down
-		xSpeed = obj_player1.maxV;
+	//hungry state 
+	case KirbyState.hungry:
+		xSpeed = xSpeedWalk;
+		dir = DetectGrass();
+		if (place_meeting(x,y,obj_grass)){
+			instance_destroy(instance_place(x,y,obj_grass));
+			hungryValue = 0;
+			state = KirbyState.stop;
+		}
 		break;
+
 }
 // horizontal movement
 
@@ -43,7 +49,14 @@ else{
 	state=KirbyState.walk;
 }
 
+// hungry state control;
+hungryValue ++;
+if (hungryValue>hungryThreshold && state!=KirbyState.run){
+	
+	state = KirbyState.hungry;
+}
 
+// clear instances out of screen
 if (place_meeting(x,y,obj_deadzone)){
 	instance_destroy(self);
 }
@@ -52,6 +65,11 @@ if (place_meeting(x,y,obj_deadzone)){
 var newXY = CollisionCheck(x,y,xSpeed,ySpeed,isGrounded);
 xSpeed = newXY[0];
 ySpeed = newXY[1];
+if (hp <= 0){
+	global.preyHunted+=1;
+	instance_create_layer(x,y,"Instances",obj_meat);
+	instance_destroy();
+}
 
 // inplement movement
 x += dir*xSpeed;

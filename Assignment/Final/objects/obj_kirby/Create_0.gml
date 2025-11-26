@@ -5,12 +5,17 @@ ySpeed = 0;
 grv = 0.8;
 isGrounded = 6;
 
+hungryValue = 0;
+hungryThreshold = 150;
+isHungry = false;
+
+hp = 2;
 // states
 enum KirbyState{
 	walk, 
 	stop,
 	run,
-	dragged,
+	hungry,
 }
 state = KirbyState.walk
 
